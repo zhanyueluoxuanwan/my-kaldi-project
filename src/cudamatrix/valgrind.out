@@ -1,0 +1,24 @@
+cu-vector-test
+/bin/sh: valgrind: 未找到命令
+cu-matrix-test
+/bin/sh: valgrind: 未找到命令
+cu-math-test
+/bin/sh: valgrind: 未找到命令
+cu-test
+/bin/sh: valgrind: 未找到命令
+cu-sp-matrix-test
+/bin/sh: valgrind: 未找到命令
+cu-packed-matrix-test
+/bin/sh: valgrind: 未找到命令
+cu-tp-matrix-test
+/bin/sh: valgrind: 未找到命令
+cu-block-matrix-test
+/bin/sh: valgrind: 未找到命令
+cu-matrix-speed-test
+/bin/sh: valgrind: 未找到命令
+cu-vector-speed-test
+/bin/sh: valgrind: 未找到命令
+cu-sp-matrix-speed-test
+/bin/sh: valgrind: 未找到命令
+cu-array-test
+/bin/sh: valgrind: 未找到命令

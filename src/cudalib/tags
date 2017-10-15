@@ -1,0 +1,940 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ADDLIBS	Makefile	/^ADDLIBS = ..\/cudamatrix\/kaldi-cudamatrix.a ..\/feat\/kaldi-feat.a ..\/ivector\/kaldi-ivector.a ..\/gmm\/kaldi-gmm.a ..\/hmm\/kaldi-hmm.a \\$/;"	m
+ADDLIBS	backup/Makefile	/^ADDLIBS = ..\/cudamatrix\/kaldi-cudamatrix.a ..\/feat\/kaldi-feat.a ..\/ivector\/kaldi-ivector.a ..\/gmm\/kaldi-gmm.a ..\/hmm\/kaldi-hmm.a \\$/;"	m
+AccStats	backup/my-cuda-ie.cc	/^void CudaIEStats::AccStats(const MatrixBase<BaseFloat> &feats, const Posterior &post)$/;"	f	class:kaldi::CudaIEStats	signature:(const MatrixBase<BaseFloat> &feats, const Posterior &post)
+AccStats	backup/my-cuda-ie.h	/^		void AccStats(const MatrixBase<BaseFloat> &feats, const Posterior &post);$/;"	p	class:kaldi::CudaIEStats	access:public	signature:(const MatrixBase<BaseFloat> &feats, const Posterior &post)
+AccStats	my-cuda-ie.cc	/^void CudaIEStats::AccStats(const MatrixBase<BaseFloat> &feats, const Posterior &post)$/;"	f	class:kaldi::CudaIEStats	signature:(const MatrixBase<BaseFloat> &feats, const Posterior &post)
+AccStats	my-cuda-ie.h	/^		void AccStats(const MatrixBase<BaseFloat> &feats, const Posterior &post);$/;"	p	class:kaldi::CudaIEStats	access:public	signature:(const MatrixBase<BaseFloat> &feats, const Posterior &post)
+AccuProfile	backup/cu-device.cc	/^void CuDevice::AccuProfile(const std::string &key, double time) {$/;"	f	class:kaldi::CuDevice	signature:(const std::string &key, double time)
+CUDATKDIR	Makefile	/^CUDATKDIR = \/usr\/local\/cuda$/;"	m
+CUDATKDIR	backup/Makefile	/^CUDATKDIR = \/usr\/local\/cuda$/;"	m
+CUDA_ARCH	Makefile	/^    CUDA_ARCH=-gencode arch=compute_37,code=sm_37$/;"	m
+CUDA_ARCH	backup/Makefile	/^    CUDA_ARCH=-gencode arch=compute_37,code=sm_37$/;"	m
+CUDA_INIT_UBM	backup/my-cuda-init.h	2;"	d
+CUDA_INIT_UBM	my-cuda-init.h	2;"	d
+CUDA_MEL_COMPUTE	backup/mel-compute.h	2;"	d
+CUDA_MEL_COMPUTE	mel-compute.h	2;"	d
+CUDA_VERSION	Makefile	/^    CUDA_VERSION=$(shell $(CUDATKDIR)\/bin\/nvcc -V | grep release | sed -e 's|.*release ||' -e 's|,.*||' -e 's|\\.||')$/;"	m
+CUDA_VERSION	backup/Makefile	/^    CUDA_VERSION=$(shell $(CUDATKDIR)\/bin\/nvcc -V | grep release | sed -e 's|.*release ||' -e 's|,.*||' -e 's|\\.||')$/;"	m
+CUDA_VER_GT_4_2	Makefile	/^    CUDA_VER_GT_4_2 := $(shell [ $(CUDA_VERSION) -ge 42 ] && echo true)$/;"	m
+CUDA_VER_GT_4_2	backup/Makefile	/^    CUDA_VER_GT_4_2 := $(shell [ $(CUDA_VERSION) -ge 42 ] && echo true)$/;"	m
+CUDA_VER_GT_5_0	Makefile	/^    CUDA_VER_GT_5_0 := $(shell [ $(CUDA_VERSION) -ge 50 ] && echo true)$/;"	m
+CUDA_VER_GT_5_0	backup/Makefile	/^    CUDA_VER_GT_5_0 := $(shell [ $(CUDA_VERSION) -ge 50 ] && echo true)$/;"	m
+CUDA_VER_GT_6_0	Makefile	/^    CUDA_VER_GT_6_0 := $(shell [ $(CUDA_VERSION) -ge 60 ] && echo true)$/;"	m
+CUDA_VER_GT_6_0	backup/Makefile	/^    CUDA_VER_GT_6_0 := $(shell [ $(CUDA_VERSION) -ge 60 ] && echo true)$/;"	m
+CUDA_VER_GT_6_5	Makefile	/^    CUDA_VER_GT_6_5 := $(shell [ $(CUDA_VERSION) -ge 65 ] && echo true)$/;"	m
+CUDA_VER_GT_6_5	backup/Makefile	/^    CUDA_VER_GT_6_5 := $(shell [ $(CUDA_VERSION) -ge 65 ] && echo true)$/;"	m
+CheckGpuHealth	backup/cu-device.cc	/^void CuDevice::CheckGpuHealth() {$/;"	f	class:kaldi::CuDevice	signature:()
+Compute	backup/mel-compute.cc	/^void CudaMelBanks::Compute(const CuVectorBase<BaseFloat> &power_spectrum,$/;"	f	class:CudaMelBanks	signature:(const CuVectorBase<BaseFloat> &power_spectrum, CuVector<BaseFloat> *mel_energies_out) const
+Compute	backup/mel-compute.h	/^		void Compute(const CuVectorBase<BaseFloat> &fft_energies,$/;"	p	class:CudaMelBanks	access:public	signature:(const CuVectorBase<BaseFloat> &fft_energies, CuVector<BaseFloat> *mel_energies_out) const
+Compute	mel-compute.cc	/^void CudaMelBanks::Compute(const CuVectorBase<BaseFloat> &power_spectrum,$/;"	f	class:CudaMelBanks	signature:(const CuVectorBase<BaseFloat> &power_spectrum, CuVector<BaseFloat> *mel_energies_out) const
+Compute	mel-compute.h	/^		void Compute(const CuVectorBase<BaseFloat> &fft_energies,$/;"	p	class:CudaMelBanks	access:public	signature:(const CuVectorBase<BaseFloat> &fft_energies, CuVector<BaseFloat> *mel_energies_out) const
+CuDevice	backup/cu-device.cc	/^CuDevice::CuDevice(): active_gpu_id_(-1), verbose_(true)$/;"	f	class:kaldi::CuDevice	signature:()
+CuMatrixInt	backup/my-cuda-data-struct.h	/^		CuMatrixInt() {}$/;"	f	class:CuMatrixInt	access:public	signature:()
+CuMatrixInt	backup/my-cuda-data-struct.h	/^		CuMatrixInt(int32_cuda rows, int32_cuda cols)$/;"	f	class:CuMatrixInt	access:public	signature:(int32_cuda rows, int32_cuda cols)
+CuMatrixInt	backup/my-cuda-data-struct.h	/^class CuMatrixInt$/;"	c
+CuMatrixInt::CuMatrixInt	backup/my-cuda-data-struct.h	/^		CuMatrixInt() {}$/;"	f	class:CuMatrixInt	access:public	signature:()
+CuMatrixInt::CuMatrixInt	backup/my-cuda-data-struct.h	/^		CuMatrixInt(int32_cuda rows, int32_cuda cols)$/;"	f	class:CuMatrixInt	access:public	signature:(int32_cuda rows, int32_cuda cols)
+CuMatrixInt::Data	backup/my-cuda-data-struct.h	/^		inline int32_cuda* Data() const {return data_;}$/;"	f	class:CuMatrixInt	access:public	signature:() const
+CuMatrixInt::NumCols	backup/my-cuda-data-struct.h	/^		inline int32_cuda NumCols() const {return cols_;}$/;"	f	class:CuMatrixInt	access:public	signature:() const
+CuMatrixInt::NumRows	backup/my-cuda-data-struct.h	/^		inline int32_cuda NumRows() const {return rows_;}$/;"	f	class:CuMatrixInt	access:public	signature:() const
+CuMatrixInt::Resize	backup/my-cuda-data-struct.cc	/^void CuMatrixInt::Resize(int32_cuda rows, int32_cuda cols)$/;"	f	class:CuMatrixInt	signature:(int32_cuda rows, int32_cuda cols)
+CuMatrixInt::Resize	backup/my-cuda-data-struct.h	/^		void Resize(int32_cuda rows, int32_cuda cols);$/;"	p	class:CuMatrixInt	access:public	signature:(int32_cuda rows, int32_cuda cols)
+CuMatrixInt::cols_	backup/my-cuda-data-struct.h	/^		int32_cuda cols_;$/;"	m	class:CuMatrixInt	access:private
+CuMatrixInt::data_	backup/my-cuda-data-struct.h	/^		int32_cuda *data_;$/;"	m	class:CuMatrixInt	access:private
+CuMatrixInt::operator ()	backup/my-cuda-data-struct.h	/^		inline int32_cuda operator() (int32_cuda row, int32_cuda col) const$/;"	f	class:CuMatrixInt	access:public	signature:(int32_cuda row, int32_cuda col) const
+CuMatrixInt::rows_	backup/my-cuda-data-struct.h	/^		int32_cuda rows_;$/;"	m	class:CuMatrixInt	access:private
+CuMatrixInt::~CuMatrixInt	backup/my-cuda-data-struct.h	/^		~CuMatrixInt(){}$/;"	f	class:CuMatrixInt	access:public	signature:()
+CudaComputeLifterCoeffs	backup/mel-compute.cc	/^void CudaComputeLifterCoeffs(BaseFloat Q, CuVectorBase<BaseFloat> *coeffs)$/;"	f	signature:(BaseFloat Q, CuVectorBase<BaseFloat> *coeffs)
+CudaComputeLifterCoeffs	backup/mel-compute.h	/^void CudaComputeLifterCoeffs(BaseFloat Q, CuVectorBase<BaseFloat> *coeffs);$/;"	p	signature:(BaseFloat Q, CuVectorBase<BaseFloat> *coeffs)
+CudaComputeLifterCoeffs	mel-compute.cc	/^void CudaComputeLifterCoeffs(BaseFloat Q, CuVectorBase<BaseFloat> *coeffs)$/;"	f	signature:(BaseFloat Q, CuVectorBase<BaseFloat> *coeffs)
+CudaComputeLifterCoeffs	mel-compute.h	/^void CudaComputeLifterCoeffs(BaseFloat Q, CuVectorBase<BaseFloat> *coeffs);$/;"	p	signature:(BaseFloat Q, CuVectorBase<BaseFloat> *coeffs)
+CudaDeltaFeatureOptions	OptionStruct.h	/^	CudaDeltaFeatureOptions(int32 order = deltaOrder, int32 window = deltaWindow):$/;"	f	struct:CudaDeltaFeatureOptions	access:public	signature:(int32 order = deltaOrder, int32 window = deltaWindow)
+CudaDeltaFeatureOptions	OptionStruct.h	/^struct CudaDeltaFeatureOptions$/;"	s
+CudaDeltaFeatureOptions	backup/OptionStruct.h	/^	CudaDeltaFeatureOptions(int32 order = deltaOrder, int32 window = deltaWindow):$/;"	f	struct:CudaDeltaFeatureOptions	access:public	signature:(int32 order = deltaOrder, int32 window = deltaWindow)
+CudaDeltaFeatureOptions	backup/OptionStruct.h	/^struct CudaDeltaFeatureOptions$/;"	s
+CudaDeltaFeatureOptions::CudaDeltaFeatureOptions	OptionStruct.h	/^	CudaDeltaFeatureOptions(int32 order = deltaOrder, int32 window = deltaWindow):$/;"	f	struct:CudaDeltaFeatureOptions	access:public	signature:(int32 order = deltaOrder, int32 window = deltaWindow)
+CudaDeltaFeatureOptions::CudaDeltaFeatureOptions	backup/OptionStruct.h	/^	CudaDeltaFeatureOptions(int32 order = deltaOrder, int32 window = deltaWindow):$/;"	f	struct:CudaDeltaFeatureOptions	access:public	signature:(int32 order = deltaOrder, int32 window = deltaWindow)
+CudaDeltaFeatureOptions::order	OptionStruct.h	/^	int32 order;$/;"	m	struct:CudaDeltaFeatureOptions	access:public
+CudaDeltaFeatureOptions::order	backup/OptionStruct.h	/^	int32 order;$/;"	m	struct:CudaDeltaFeatureOptions	access:public
+CudaDeltaFeatureOptions::window	OptionStruct.h	/^	int32 window;$/;"	m	struct:CudaDeltaFeatureOptions	access:public
+CudaDeltaFeatureOptions::window	backup/OptionStruct.h	/^	int32 window;$/;"	m	struct:CudaDeltaFeatureOptions	access:public
+CudaDurbin	backup/mel-compute.cc	/^BaseFloat CudaDurbin(int n, const BaseFloat *pAC, BaseFloat *pLP, BaseFloat *pTmp)$/;"	f	signature:(int n, const BaseFloat *pAC, BaseFloat *pLP, BaseFloat *pTmp)
+CudaDurbin	backup/mel-compute.h	/^BaseFloat CudaDurbin(int32 n, const BaseFloat *pAC, BaseFloat *pLP, BaseFloat *pTmp);$/;"	p	signature:(int32 n, const BaseFloat *pAC, BaseFloat *pLP, BaseFloat *pTmp)
+CudaDurbin	mel-compute.cc	/^BaseFloat CudaDurbin(int n, const BaseFloat *pAC, BaseFloat *pLP, BaseFloat *pTmp)$/;"	f	signature:(int n, const BaseFloat *pAC, BaseFloat *pLP, BaseFloat *pTmp)
+CudaDurbin	mel-compute.h	/^BaseFloat CudaDurbin(int32 n, const BaseFloat *pAC, BaseFloat *pLP, BaseFloat *pTmp);$/;"	p	signature:(int32 n, const BaseFloat *pAC, BaseFloat *pLP, BaseFloat *pTmp)
+CudaFFT	backup/my-cuda-function.h	/^		CudaFFT(int32 dim): dim_(dim) {}$/;"	f	class:CudaFFT	access:public	signature:(int32 dim)
+CudaFFT	backup/my-cuda-function.h	/^class CudaFFT {$/;"	c
+CudaFFT	my-cuda-function.h	/^		CudaFFT(int32 dim): dim_(dim) {}$/;"	f	class:CudaFFT	access:public	signature:(int32 dim)
+CudaFFT	my-cuda-function.h	/^class CudaFFT {$/;"	c
+CudaFFT::CudaFFT	backup/my-cuda-function.h	/^		CudaFFT(int32 dim): dim_(dim) {}$/;"	f	class:CudaFFT	access:public	signature:(int32 dim)
+CudaFFT::CudaFFT	my-cuda-function.h	/^		CudaFFT(int32 dim): dim_(dim) {}$/;"	f	class:CudaFFT	access:public	signature:(int32 dim)
+CudaFFT::compute	backup/my-cuda-function.h	/^		void compute(Real *data);$/;"	p	class:CudaFFT	access:public	signature:(Real *data)
+CudaFFT::compute	backup/my-cuda-function.h	/^void CudaFFT<Real>::compute(Real *data)$/;"	f	class:CudaFFT	signature:(Real *data)
+CudaFFT::compute	my-cuda-function.h	/^		void compute(Real *data);$/;"	p	class:CudaFFT	access:public	signature:(Real *data)
+CudaFFT::compute	my-cuda-function.h	/^void CudaFFT<Real>::compute(Real *data)$/;"	f	class:CudaFFT	signature:(Real *data)
+CudaFFT::dim_	backup/my-cuda-function.h	/^		int32 dim_;$/;"	m	class:CudaFFT	access:private
+CudaFFT::dim_	my-cuda-function.h	/^		int32 dim_;$/;"	m	class:CudaFFT	access:private
+CudaFFT::~CudaFFT	backup/my-cuda-function.h	/^		~CudaFFT() {}$/;"	f	class:CudaFFT	access:public	signature:()
+CudaFFT::~CudaFFT	my-cuda-function.h	/^		~CudaFFT() {}$/;"	f	class:CudaFFT	access:public	signature:()
+CudaFGMM	backup/my-cuda-fgmm.h	/^		CudaFGMM() {}$/;"	f	class:kaldi::CudaFGMM	access:public	signature:()
+CudaFGMM	backup/my-cuda-fgmm.h	/^class CudaFGMM$/;"	c	namespace:kaldi
+CudaFGMM	my-cuda-fgmm.h	/^		CudaFGMM() {}$/;"	f	class:kaldi::CudaFGMM	access:public	signature:()
+CudaFGMM	my-cuda-fgmm.h	/^class CudaFGMM$/;"	c	namespace:kaldi
+CudaFGMM::LogLikelihoodsPreselect	backup/my-cuda-fgmm.cc	/^void CudaFGMM::LogLikelihoodsPreselect(const CuVectorBase<BaseFloat> &data,$/;"	f	class:CudaFGMM	signature:(const CuVectorBase<BaseFloat> &data, const vector<int32> &indices, Vector<BaseFloat> *loglikes) const
+CudaFGMM::LogLikelihoodsPreselect	my-cuda-fgmm.cc	/^void CudaFGMM::LogLikelihoodsPreselect(const CuVectorBase<BaseFloat> &data,$/;"	f	class:CudaFGMM	signature:(const CuVectorBase<BaseFloat> &data, const vector<int32> &indices, Vector<BaseFloat> *loglikes) const
+CudaFGMM::Read	backup/my-cuda-fgmm.cc	/^void CudaFGMM::Read(std::istream &is, bool binary)$/;"	f	class:CudaFGMM	signature:(std::istream &is, bool binary)
+CudaFGMM::Read	my-cuda-fgmm.cc	/^void CudaFGMM::Read(std::istream &is, bool binary)$/;"	f	class:CudaFGMM	signature:(std::istream &is, bool binary)
+CudaFGMM::ResizeInvCovars	backup/my-cuda-fgmm.cc	/^void CudaFGMM::ResizeInvCovars(int32 nmix, int32 dim)$/;"	f	class:CudaFGMM	signature:(int32 nmix, int32 dim)
+CudaFGMM::ResizeInvCovars	my-cuda-fgmm.cc	/^void CudaFGMM::ResizeInvCovars(int32 nmix, int32 dim)$/;"	f	class:CudaFGMM	signature:(int32 nmix, int32 dim)
+CudaFeatureWindowFunction	OptionStruct.h	/^	CudaFeatureWindowFunction() {}$/;"	f	struct:CudaFeatureWindowFunction	access:public	signature:()
+CudaFeatureWindowFunction	OptionStruct.h	/^	explicit CudaFeatureWindowFunction(const CudaFrameExtractionOptions &opts);$/;"	p	struct:CudaFeatureWindowFunction	access:public	signature:(const CudaFrameExtractionOptions &opts)
+CudaFeatureWindowFunction	OptionStruct.h	/^struct CudaFeatureWindowFunction$/;"	s
+CudaFeatureWindowFunction	backup/OptionStruct.h	/^	CudaFeatureWindowFunction() {}$/;"	f	struct:CudaFeatureWindowFunction	access:public	signature:()
+CudaFeatureWindowFunction	backup/OptionStruct.h	/^	explicit CudaFeatureWindowFunction(const CudaFrameExtractionOptions &opts);$/;"	p	struct:CudaFeatureWindowFunction	access:public	signature:(const CudaFrameExtractionOptions &opts)
+CudaFeatureWindowFunction	backup/OptionStruct.h	/^struct CudaFeatureWindowFunction$/;"	s
+CudaFeatureWindowFunction::CudaFeatureWindowFunction	OptionStruct.h	/^	CudaFeatureWindowFunction() {}$/;"	f	struct:CudaFeatureWindowFunction	access:public	signature:()
+CudaFeatureWindowFunction::CudaFeatureWindowFunction	OptionStruct.h	/^	explicit CudaFeatureWindowFunction(const CudaFrameExtractionOptions &opts);$/;"	p	struct:CudaFeatureWindowFunction	access:public	signature:(const CudaFrameExtractionOptions &opts)
+CudaFeatureWindowFunction::CudaFeatureWindowFunction	backup/OptionStruct.h	/^	CudaFeatureWindowFunction() {}$/;"	f	struct:CudaFeatureWindowFunction	access:public	signature:()
+CudaFeatureWindowFunction::CudaFeatureWindowFunction	backup/OptionStruct.h	/^	explicit CudaFeatureWindowFunction(const CudaFrameExtractionOptions &opts);$/;"	p	struct:CudaFeatureWindowFunction	access:public	signature:(const CudaFrameExtractionOptions &opts)
+CudaFeatureWindowFunction::window	OptionStruct.h	/^	Vector<BaseFloat> window;$/;"	m	struct:CudaFeatureWindowFunction	access:public
+CudaFeatureWindowFunction::window	backup/OptionStruct.h	/^	Vector<BaseFloat> window;$/;"	m	struct:CudaFeatureWindowFunction	access:public
+CudaFrameExtractionOptions	OptionStruct.h	/^	CudaFrameExtractionOptions():$/;"	f	struct:CudaFrameExtractionOptions	access:public	signature:()
+CudaFrameExtractionOptions	OptionStruct.h	/^struct CudaFrameExtractionOptions$/;"	s
+CudaFrameExtractionOptions	backup/OptionStruct.h	/^	CudaFrameExtractionOptions():$/;"	f	struct:CudaFrameExtractionOptions	access:public	signature:()
+CudaFrameExtractionOptions	backup/OptionStruct.h	/^struct CudaFrameExtractionOptions$/;"	s
+CudaFrameExtractionOptions::CudaFrameExtractionOptions	OptionStruct.h	/^	CudaFrameExtractionOptions():$/;"	f	struct:CudaFrameExtractionOptions	access:public	signature:()
+CudaFrameExtractionOptions::CudaFrameExtractionOptions	backup/OptionStruct.h	/^	CudaFrameExtractionOptions():$/;"	f	struct:CudaFrameExtractionOptions	access:public	signature:()
+CudaFrameExtractionOptions::PaddedWindowSize	OptionStruct.h	/^	int32 PaddedWindowSize() const$/;"	f	struct:CudaFrameExtractionOptions	access:public	signature:() const
+CudaFrameExtractionOptions::PaddedWindowSize	backup/OptionStruct.h	/^	int32 PaddedWindowSize() const$/;"	f	struct:CudaFrameExtractionOptions	access:public	signature:() const
+CudaFrameExtractionOptions::WindowShift	OptionStruct.h	/^	int32 WindowShift() const$/;"	f	struct:CudaFrameExtractionOptions	access:public	signature:() const
+CudaFrameExtractionOptions::WindowShift	backup/OptionStruct.h	/^	int32 WindowShift() const$/;"	f	struct:CudaFrameExtractionOptions	access:public	signature:() const
+CudaFrameExtractionOptions::WindowSize	OptionStruct.h	/^	int32 WindowSize() const$/;"	f	struct:CudaFrameExtractionOptions	access:public	signature:() const
+CudaFrameExtractionOptions::WindowSize	backup/OptionStruct.h	/^	int32 WindowSize() const$/;"	f	struct:CudaFrameExtractionOptions	access:public	signature:() const
+CudaFrameExtractionOptions::dither	OptionStruct.h	/^	BaseFloat dither;$/;"	m	struct:CudaFrameExtractionOptions	access:public
+CudaFrameExtractionOptions::dither	backup/OptionStruct.h	/^	BaseFloat dither;$/;"	m	struct:CudaFrameExtractionOptions	access:public
+CudaFrameExtractionOptions::frame_length_ms	OptionStruct.h	/^	BaseFloat frame_length_ms;$/;"	m	struct:CudaFrameExtractionOptions	access:public
+CudaFrameExtractionOptions::frame_length_ms	backup/OptionStruct.h	/^	BaseFloat frame_length_ms;$/;"	m	struct:CudaFrameExtractionOptions	access:public
+CudaFrameExtractionOptions::frame_shift_ms	OptionStruct.h	/^	BaseFloat frame_shift_ms;$/;"	m	struct:CudaFrameExtractionOptions	access:public
+CudaFrameExtractionOptions::frame_shift_ms	backup/OptionStruct.h	/^	BaseFloat frame_shift_ms;$/;"	m	struct:CudaFrameExtractionOptions	access:public
+CudaFrameExtractionOptions::preemph_coeff	OptionStruct.h	/^	BaseFloat preemph_coeff;$/;"	m	struct:CudaFrameExtractionOptions	access:public
+CudaFrameExtractionOptions::preemph_coeff	backup/OptionStruct.h	/^	BaseFloat preemph_coeff;$/;"	m	struct:CudaFrameExtractionOptions	access:public
+CudaFrameExtractionOptions::remove_dc_offset	OptionStruct.h	/^	bool remove_dc_offset;$/;"	m	struct:CudaFrameExtractionOptions	access:public
+CudaFrameExtractionOptions::remove_dc_offset	backup/OptionStruct.h	/^	bool remove_dc_offset;$/;"	m	struct:CudaFrameExtractionOptions	access:public
+CudaFrameExtractionOptions::round_to_power_of_two	OptionStruct.h	/^	bool round_to_power_of_two;$/;"	m	struct:CudaFrameExtractionOptions	access:public
+CudaFrameExtractionOptions::round_to_power_of_two	backup/OptionStruct.h	/^	bool round_to_power_of_two;$/;"	m	struct:CudaFrameExtractionOptions	access:public
+CudaFrameExtractionOptions::samp_freq	OptionStruct.h	/^	BaseFloat samp_freq;$/;"	m	struct:CudaFrameExtractionOptions	access:public
+CudaFrameExtractionOptions::samp_freq	backup/OptionStruct.h	/^	BaseFloat samp_freq;$/;"	m	struct:CudaFrameExtractionOptions	access:public
+CudaFrameExtractionOptions::snip_edges	OptionStruct.h	/^	bool snip_edges;$/;"	m	struct:CudaFrameExtractionOptions	access:public
+CudaFrameExtractionOptions::snip_edges	backup/OptionStruct.h	/^	bool snip_edges;$/;"	m	struct:CudaFrameExtractionOptions	access:public
+CudaFrameExtractionOptions::window_type	OptionStruct.h	/^	std::string window_type;$/;"	m	struct:CudaFrameExtractionOptions	access:public
+CudaFrameExtractionOptions::window_type	backup/OptionStruct.h	/^	std::string window_type;$/;"	m	struct:CudaFrameExtractionOptions	access:public
+CudaGMM	backup/my-cuda-gmm.h	/^		CudaGMM() {}$/;"	f	class:kaldi::CudaGMM	access:public	signature:()
+CudaGMM	backup/my-cuda-gmm.h	/^class CudaGMM$/;"	c	namespace:kaldi
+CudaGMM	my-cuda-gmm.h	/^		CudaGMM() {}$/;"	f	class:kaldi::CudaGMM	access:public	signature:()
+CudaGMM	my-cuda-gmm.h	/^class CudaGMM$/;"	c	namespace:kaldi
+CudaGMM::GaussianSelection	backup/my-cuda-gmm.cc	/^void CudaGMM::GaussianSelection(const CuMatrixBase<BaseFloat> &data,$/;"	f	class:CudaGMM	signature:(const CuMatrixBase<BaseFloat> &data, int32 num_gselect, CuMatrixInt &output) const
+CudaGMM::GaussianSelection	my-cuda-gmm.cc	/^void CudaGMM::GaussianSelection(const CuMatrixBase<BaseFloat> &data,$/;"	f	class:CudaGMM	signature:(const CuMatrixBase<BaseFloat> &data, int32 num_gselect, MatrixInt &output) const
+CudaGMM::LoglikeLihoods	backup/my-cuda-gmm.cc	/^void CudaGMM::LoglikeLihoods(const CuMatrixBase<BaseFloat> &data,$/;"	f	class:CudaGMM	signature:(const CuMatrixBase<BaseFloat> &data, CuMatrix<BaseFloat> *loglikes) const
+CudaGMM::LoglikeLihoods	my-cuda-gmm.cc	/^void CudaGMM::LoglikeLihoods(const CuMatrixBase<BaseFloat> &data,$/;"	f	class:CudaGMM	signature:(const CuMatrixBase<BaseFloat> &data, CuMatrix<BaseFloat> *loglikes) const
+CudaGMM::Read	backup/my-cuda-gmm.cc	/^void CudaGMM::Read(std::istream &is, bool binary)$/;"	f	class:CudaGMM	signature:(std::istream &is, bool binary)
+CudaGMM::Read	my-cuda-gmm.cc	/^void CudaGMM::Read(std::istream &is, bool binary)$/;"	f	class:CudaGMM	signature:(std::istream &is, bool binary)
+CudaIE	backup/my-cuda-ie.h	/^		CudaIE(): prior_offset_(0.0) {}$/;"	f	class:kaldi::CudaIE	access:public	signature:()
+CudaIE	backup/my-cuda-ie.h	/^class CudaIE$/;"	c	namespace:kaldi
+CudaIE	my-cuda-ie.h	/^		CudaIE(): prior_offset_(0.0) {}$/;"	f	class:kaldi::CudaIE	access:public	signature:()
+CudaIE	my-cuda-ie.h	/^class CudaIE$/;"	c	namespace:kaldi
+CudaIEStats	backup/my-cuda-ie.h	/^		CudaIEStats() {}$/;"	f	class:kaldi::CudaIEStats	access:public	signature:()
+CudaIEStats	backup/my-cuda-ie.h	/^class CudaIEStats$/;"	c	namespace:kaldi
+CudaIEStats	my-cuda-ie.h	/^		CudaIEStats() {}$/;"	f	class:kaldi::CudaIEStats	access:public	signature:()
+CudaIEStats	my-cuda-ie.h	/^class CudaIEStats$/;"	c	namespace:kaldi
+CudaInitReadFile	backup/my-cuda-init.cc	/^bool CudaInitUBM::CudaInitReadFile(std::string final_ubm, std::string final_ie, std::string gmm_ubm, int gpuid)$/;"	f	class:CudaInitUBM	signature:(std::string final_ubm, std::string final_ie, std::string gmm_ubm, int gpuid)
+CudaInitReadFile	backup/my-cuda-init.h	/^		bool CudaInitReadFile(std::string final_ubm, std::string final_ie, std::string gmm_ubm, int gpuid);$/;"	p	class:kaldi::CudaInitUBM	access:public	signature:(std::string final_ubm, std::string final_ie, std::string gmm_ubm, int gpuid)
+CudaInitReadFile	my-cuda-init.cc	/^bool CudaInitUBM::CudaInitReadFile(std::string final_ubm, std::string final_ie, std::string gmm_ubm, int gpuid)$/;"	f	class:CudaInitUBM	signature:(std::string final_ubm, std::string final_ie, std::string gmm_ubm, int gpuid)
+CudaInitReadFile	my-cuda-init.h	/^		bool CudaInitReadFile(std::string final_ubm, std::string final_ie, std::string gmm_ubm, int gpuid);$/;"	p	class:kaldi::CudaInitUBM	access:public	signature:(std::string final_ubm, std::string final_ie, std::string gmm_ubm, int gpuid)
+CudaInitUBM	backup/my-cuda-init.h	/^		CudaInitUBM() {}$/;"	f	class:kaldi::CudaInitUBM	access:public	signature:()
+CudaInitUBM	backup/my-cuda-init.h	/^class CudaInitUBM$/;"	c	namespace:kaldi
+CudaInitUBM	my-cuda-init.h	/^		CudaInitUBM() : gpuid_(-1) {}$/;"	f	class:kaldi::CudaInitUBM	access:public	signature:()
+CudaInitUBM	my-cuda-init.h	/^class CudaInitUBM$/;"	c	namespace:kaldi
+CudaInitUBM::CudaInitReadFile	backup/my-cuda-init.cc	/^bool CudaInitUBM::CudaInitReadFile(std::string final_ubm, std::string final_ie, std::string gmm_ubm, int gpuid)$/;"	f	class:CudaInitUBM	signature:(std::string final_ubm, std::string final_ie, std::string gmm_ubm, int gpuid)
+CudaInitUBM::CudaInitReadFile	my-cuda-init.cc	/^bool CudaInitUBM::CudaInitReadFile(std::string final_ubm, std::string final_ie, std::string gmm_ubm, int gpuid)$/;"	f	class:CudaInitUBM	signature:(std::string final_ubm, std::string final_ie, std::string gmm_ubm, int gpuid)
+CudaInitUBM::getGpuID	my-cuda-init.cc	/^int CudaInitUBM::getGpuID()$/;"	f	class:CudaInitUBM	signature:()
+CudaLpc2Cepstrum	backup/mel-compute.cc	/^void CudaLpc2Cepstrum(int n, const BaseFloat *pLPC, BaseFloat *pCepst)$/;"	f	signature:(int n, const BaseFloat *pLPC, BaseFloat *pCepst)
+CudaLpc2Cepstrum	backup/mel-compute.h	/^void CudaLpc2Cepstrum(int32 n, const BaseFloat *pLPC, BaseFloat *pCepst);$/;"	p	signature:(int32 n, const BaseFloat *pLPC, BaseFloat *pCepst)
+CudaLpc2Cepstrum	mel-compute.cc	/^void CudaLpc2Cepstrum(int n, const BaseFloat *pLPC, BaseFloat *pCepst)$/;"	f	signature:(int n, const BaseFloat *pLPC, BaseFloat *pCepst)
+CudaLpc2Cepstrum	mel-compute.h	/^void CudaLpc2Cepstrum(int32 n, const BaseFloat *pLPC, BaseFloat *pCepst);$/;"	p	signature:(int32 n, const BaseFloat *pLPC, BaseFloat *pCepst)
+CudaMelBanks	backup/mel-compute.cc	/^CudaMelBanks::CudaMelBanks(const CudaMelBanksOptions &opts,$/;"	f	class:CudaMelBanks	signature:(const CudaMelBanksOptions &opts, const CudaFrameExtractionOptions &frame_opts, BaseFloat vtln_warp_factor)
+CudaMelBanks	backup/mel-compute.h	/^		CudaMelBanks(const CudaMelBanksOptions &opts,$/;"	p	class:CudaMelBanks	access:public	signature:(const CudaMelBanksOptions &opts, const CudaFrameExtractionOptions &frame_opts, BaseFloat vtln_warp_factor)
+CudaMelBanks	backup/mel-compute.h	/^class CudaMelBanks$/;"	c
+CudaMelBanks	mel-compute.cc	/^CudaMelBanks::CudaMelBanks(const CudaMelBanksOptions &opts,$/;"	f	class:CudaMelBanks	signature:(const CudaMelBanksOptions &opts, const CudaFrameExtractionOptions &frame_opts, BaseFloat vtln_warp_factor)
+CudaMelBanks	mel-compute.h	/^		CudaMelBanks(const CudaMelBanksOptions &opts,$/;"	p	class:CudaMelBanks	access:public	signature:(const CudaMelBanksOptions &opts, const CudaFrameExtractionOptions &frame_opts, BaseFloat vtln_warp_factor)
+CudaMelBanks	mel-compute.h	/^class CudaMelBanks$/;"	c
+CudaMelBanks::Compute	backup/mel-compute.cc	/^void CudaMelBanks::Compute(const CuVectorBase<BaseFloat> &power_spectrum,$/;"	f	class:CudaMelBanks	signature:(const CuVectorBase<BaseFloat> &power_spectrum, CuVector<BaseFloat> *mel_energies_out) const
+CudaMelBanks::Compute	backup/mel-compute.h	/^		void Compute(const CuVectorBase<BaseFloat> &fft_energies,$/;"	p	class:CudaMelBanks	access:public	signature:(const CuVectorBase<BaseFloat> &fft_energies, CuVector<BaseFloat> *mel_energies_out) const
+CudaMelBanks::Compute	mel-compute.cc	/^void CudaMelBanks::Compute(const CuVectorBase<BaseFloat> &power_spectrum,$/;"	f	class:CudaMelBanks	signature:(const CuVectorBase<BaseFloat> &power_spectrum, CuVector<BaseFloat> *mel_energies_out) const
+CudaMelBanks::Compute	mel-compute.h	/^		void Compute(const CuVectorBase<BaseFloat> &fft_energies,$/;"	p	class:CudaMelBanks	access:public	signature:(const CuVectorBase<BaseFloat> &fft_energies, CuVector<BaseFloat> *mel_energies_out) const
+CudaMelBanks::CudaMelBanks	backup/mel-compute.cc	/^CudaMelBanks::CudaMelBanks(const CudaMelBanksOptions &opts,$/;"	f	class:CudaMelBanks	signature:(const CudaMelBanksOptions &opts, const CudaFrameExtractionOptions &frame_opts, BaseFloat vtln_warp_factor)
+CudaMelBanks::CudaMelBanks	backup/mel-compute.h	/^		CudaMelBanks(const CudaMelBanksOptions &opts,$/;"	p	class:CudaMelBanks	access:public	signature:(const CudaMelBanksOptions &opts, const CudaFrameExtractionOptions &frame_opts, BaseFloat vtln_warp_factor)
+CudaMelBanks::CudaMelBanks	mel-compute.cc	/^CudaMelBanks::CudaMelBanks(const CudaMelBanksOptions &opts,$/;"	f	class:CudaMelBanks	signature:(const CudaMelBanksOptions &opts, const CudaFrameExtractionOptions &frame_opts, BaseFloat vtln_warp_factor)
+CudaMelBanks::CudaMelBanks	mel-compute.h	/^		CudaMelBanks(const CudaMelBanksOptions &opts,$/;"	p	class:CudaMelBanks	access:public	signature:(const CudaMelBanksOptions &opts, const CudaFrameExtractionOptions &frame_opts, BaseFloat vtln_warp_factor)
+CudaMelBanks::GetCenterFreqs	backup/mel-compute.h	/^		const CuVector<BaseFloat> &GetCenterFreqs() const { return center_freqs_;}$/;"	f	class:CudaMelBanks	access:public	signature:() const
+CudaMelBanks::GetCenterFreqs	mel-compute.h	/^		const CuVector<BaseFloat> &GetCenterFreqs() const { return center_freqs_;}$/;"	f	class:CudaMelBanks	access:public	signature:() const
+CudaMelBanks::InverseMelScale	backup/mel-compute.h	/^		static inline BaseFloat InverseMelScale(BaseFloat mel_freq)$/;"	f	class:CudaMelBanks	access:public	signature:(BaseFloat mel_freq)
+CudaMelBanks::InverseMelScale	mel-compute.h	/^		static inline BaseFloat InverseMelScale(BaseFloat mel_freq)$/;"	f	class:CudaMelBanks	access:public	signature:(BaseFloat mel_freq)
+CudaMelBanks::KALDI_DISALLOW_COPY_AND_ASSIGN	backup/mel-compute.h	/^		KALDI_DISALLOW_COPY_AND_ASSIGN(CudaMelBanks);$/;"	p	class:CudaMelBanks	access:private	signature:(CudaMelBanks)
+CudaMelBanks::KALDI_DISALLOW_COPY_AND_ASSIGN	mel-compute.h	/^		KALDI_DISALLOW_COPY_AND_ASSIGN(CudaMelBanks);$/;"	p	class:CudaMelBanks	access:private	signature:(CudaMelBanks)
+CudaMelBanks::MelScale	backup/mel-compute.h	/^		static inline BaseFloat MelScale(BaseFloat freq)$/;"	f	class:CudaMelBanks	access:public	signature:(BaseFloat freq)
+CudaMelBanks::MelScale	mel-compute.h	/^		static inline BaseFloat MelScale(BaseFloat freq)$/;"	f	class:CudaMelBanks	access:public	signature:(BaseFloat freq)
+CudaMelBanks::NumBins	backup/mel-compute.h	/^		int32 NumBins() const { return bins_.size(); }$/;"	f	class:CudaMelBanks	access:public	signature:() const
+CudaMelBanks::NumBins	mel-compute.h	/^		int32 NumBins() const { return bins_.size(); }$/;"	f	class:CudaMelBanks	access:public	signature:() const
+CudaMelBanks::VtlnWarpFreq	backup/mel-compute.cc	/^BaseFloat CudaMelBanks::VtlnWarpFreq(BaseFloat vtln_low_cutoff,  \/\/ upper+lower frequency cutoffs for VTLN.$/;"	f	class:CudaMelBanks	signature:(BaseFloat vtln_low_cutoff, BaseFloat vtln_high_cutoff, BaseFloat low_freq, BaseFloat high_freq, BaseFloat vtln_warp_factor, BaseFloat freq)
+CudaMelBanks::VtlnWarpFreq	backup/mel-compute.h	/^		static BaseFloat VtlnWarpFreq(BaseFloat vtln_low_cutoff,$/;"	p	class:CudaMelBanks	access:public	signature:(BaseFloat vtln_low_cutoff, BaseFloat vtln_high_cutoff, BaseFloat low_freq, BaseFloat high_freq, BaseFloat vtln_warp_factor, BaseFloat freq)
+CudaMelBanks::VtlnWarpFreq	mel-compute.cc	/^BaseFloat CudaMelBanks::VtlnWarpFreq(BaseFloat vtln_low_cutoff,  \/\/ upper+lower frequency cutoffs for VTLN.$/;"	f	class:CudaMelBanks	signature:(BaseFloat vtln_low_cutoff, BaseFloat vtln_high_cutoff, BaseFloat low_freq, BaseFloat high_freq, BaseFloat vtln_warp_factor, BaseFloat freq)
+CudaMelBanks::VtlnWarpFreq	mel-compute.h	/^		static BaseFloat VtlnWarpFreq(BaseFloat vtln_low_cutoff,$/;"	p	class:CudaMelBanks	access:public	signature:(BaseFloat vtln_low_cutoff, BaseFloat vtln_high_cutoff, BaseFloat low_freq, BaseFloat high_freq, BaseFloat vtln_warp_factor, BaseFloat freq)
+CudaMelBanks::VtlnWarpMelFreq	backup/mel-compute.cc	/^BaseFloat CudaMelBanks::VtlnWarpMelFreq(BaseFloat vtln_low_cutoff,  \/\/ upper+lower frequency cutoffs for VTLN.$/;"	f	class:CudaMelBanks	signature:(BaseFloat vtln_low_cutoff, BaseFloat vtln_high_cutoff, BaseFloat low_freq, BaseFloat high_freq, BaseFloat vtln_warp_factor, BaseFloat mel_freq)
+CudaMelBanks::VtlnWarpMelFreq	backup/mel-compute.h	/^		static BaseFloat VtlnWarpMelFreq(BaseFloat vtln_low_cutoff,$/;"	p	class:CudaMelBanks	access:public	signature:(BaseFloat vtln_low_cutoff, BaseFloat vtln_high_cutoff, BaseFloat low_freq, BaseFloat high_freq, BaseFloat vtln_warp_factor, BaseFloat freq)
+CudaMelBanks::VtlnWarpMelFreq	mel-compute.cc	/^BaseFloat CudaMelBanks::VtlnWarpMelFreq(BaseFloat vtln_low_cutoff,  \/\/ upper+lower frequency cutoffs for VTLN.$/;"	f	class:CudaMelBanks	signature:(BaseFloat vtln_low_cutoff, BaseFloat vtln_high_cutoff, BaseFloat low_freq, BaseFloat high_freq, BaseFloat vtln_warp_factor, BaseFloat mel_freq)
+CudaMelBanks::VtlnWarpMelFreq	mel-compute.h	/^		static BaseFloat VtlnWarpMelFreq(BaseFloat vtln_low_cutoff,$/;"	p	class:CudaMelBanks	access:public	signature:(BaseFloat vtln_low_cutoff, BaseFloat vtln_high_cutoff, BaseFloat low_freq, BaseFloat high_freq, BaseFloat vtln_warp_factor, BaseFloat freq)
+CudaMelBanks::bins_	backup/mel-compute.h	/^		vector<std::pair<int32, CuVector<BaseFloat> > > bins_;$/;"	m	class:CudaMelBanks	access:private
+CudaMelBanks::bins_	mel-compute.h	/^		vector<std::pair<int32, CuVector<BaseFloat> > > bins_;$/;"	m	class:CudaMelBanks	access:private
+CudaMelBanks::center_freqs_	backup/mel-compute.h	/^		CuVector<BaseFloat> center_freqs_;$/;"	m	class:CudaMelBanks	access:private
+CudaMelBanks::center_freqs_	mel-compute.h	/^		CuVector<BaseFloat> center_freqs_;$/;"	m	class:CudaMelBanks	access:private
+CudaMelBanks::debug_	backup/mel-compute.h	/^		bool debug_;$/;"	m	class:CudaMelBanks	access:private
+CudaMelBanks::debug_	mel-compute.h	/^		bool debug_;$/;"	m	class:CudaMelBanks	access:private
+CudaMelBanks::htk_mode_	backup/mel-compute.h	/^		bool htk_mode_;$/;"	m	class:CudaMelBanks	access:private
+CudaMelBanks::htk_mode_	mel-compute.h	/^		bool htk_mode_;$/;"	m	class:CudaMelBanks	access:private
+CudaMelBanksOptions	OptionStruct.h	/^	explicit CudaMelBanksOptions(int num_bins=numBins):$/;"	f	struct:CudaMelBanksOptions	access:public	signature:(int num_bins=numBins)
+CudaMelBanksOptions	OptionStruct.h	/^struct CudaMelBanksOptions$/;"	s
+CudaMelBanksOptions	backup/OptionStruct.h	/^	explicit CudaMelBanksOptions(int num_bins=numBins):$/;"	f	struct:CudaMelBanksOptions	access:public	signature:(int num_bins=numBins)
+CudaMelBanksOptions	backup/OptionStruct.h	/^struct CudaMelBanksOptions$/;"	s
+CudaMelBanksOptions::CudaMelBanksOptions	OptionStruct.h	/^	explicit CudaMelBanksOptions(int num_bins=numBins):$/;"	f	struct:CudaMelBanksOptions	access:public	signature:(int num_bins=numBins)
+CudaMelBanksOptions::CudaMelBanksOptions	backup/OptionStruct.h	/^	explicit CudaMelBanksOptions(int num_bins=numBins):$/;"	f	struct:CudaMelBanksOptions	access:public	signature:(int num_bins=numBins)
+CudaMelBanksOptions::debug_mel	OptionStruct.h	/^	bool debug_mel;$/;"	m	struct:CudaMelBanksOptions	access:public
+CudaMelBanksOptions::debug_mel	backup/OptionStruct.h	/^	bool debug_mel;$/;"	m	struct:CudaMelBanksOptions	access:public
+CudaMelBanksOptions::high_freq	OptionStruct.h	/^	BaseFloat high_freq;$/;"	m	struct:CudaMelBanksOptions	access:public
+CudaMelBanksOptions::high_freq	backup/OptionStruct.h	/^	BaseFloat high_freq;$/;"	m	struct:CudaMelBanksOptions	access:public
+CudaMelBanksOptions::htk_mode	OptionStruct.h	/^	bool htk_mode;$/;"	m	struct:CudaMelBanksOptions	access:public
+CudaMelBanksOptions::htk_mode	backup/OptionStruct.h	/^	bool htk_mode;$/;"	m	struct:CudaMelBanksOptions	access:public
+CudaMelBanksOptions::low_freq	OptionStruct.h	/^	BaseFloat low_freq;$/;"	m	struct:CudaMelBanksOptions	access:public
+CudaMelBanksOptions::low_freq	backup/OptionStruct.h	/^	BaseFloat low_freq;$/;"	m	struct:CudaMelBanksOptions	access:public
+CudaMelBanksOptions::num_bins	OptionStruct.h	/^	int32 num_bins;$/;"	m	struct:CudaMelBanksOptions	access:public
+CudaMelBanksOptions::num_bins	backup/OptionStruct.h	/^	int32 num_bins;$/;"	m	struct:CudaMelBanksOptions	access:public
+CudaMelBanksOptions::vtln_high	OptionStruct.h	/^	BaseFloat vtln_high;$/;"	m	struct:CudaMelBanksOptions	access:public
+CudaMelBanksOptions::vtln_high	backup/OptionStruct.h	/^	BaseFloat vtln_high;$/;"	m	struct:CudaMelBanksOptions	access:public
+CudaMelBanksOptions::vtln_low	OptionStruct.h	/^	BaseFloat vtln_low;$/;"	m	struct:CudaMelBanksOptions	access:public
+CudaMelBanksOptions::vtln_low	backup/OptionStruct.h	/^	BaseFloat vtln_low;$/;"	m	struct:CudaMelBanksOptions	access:public
+CudaSRE	backup/my-cuda-sre.h	/^		CudaSRE(): SRE<DataType>() {}$/;"	f	class:kaldi::CudaSRE	access:public	signature:()
+CudaSRE	backup/my-cuda-sre.h	/^class CudaSRE: public SRE<DataType>$/;"	c	namespace:kaldi	inherits:SRE
+CudaSRE	my-cuda-sre.h	/^		CudaSRE(): SRE<DataType>() {}$/;"	f	class:kaldi::CudaSRE	access:public	signature:()
+CudaSRE	my-cuda-sre.h	/^class CudaSRE: public SRE<DataType>$/;"	c	namespace:kaldi	inherits:SRE
+CudaSRE::cuda_compute_ivector	backup/my-cuda-sre.cc	/^bool CudaSRE<DataType>::cuda_compute_ivector(CudaIE &ie)$/;"	f	class:CudaSRE	signature:(CudaIE &ie)
+CudaSRE::cuda_compute_mfcc	backup/my-cuda-sre.cc	/^bool CudaSRE<DataType>::cuda_compute_mfcc()$/;"	f	class:CudaSRE	signature:()
+CudaSRE::cuda_compute_posterior	backup/my-cuda-sre.cc	/^bool CudaSRE<DataType>::cuda_compute_posterior(FullGmm &fgmm_)$/;"	f	class:CudaSRE	signature:(FullGmm &fgmm_)
+CudaSRE::get_cuda_feature	backup/my-cuda-sre.cc	/^CuMatrix<BaseFloat> CudaSRE<DataType>::get_cuda_feature()$/;"	f	class:CudaSRE	signature:()
+CudaSRE::get_ivector	backup/my-cuda-sre.cc	/^Vector<double> CudaSRE<DataType>::get_ivector()$/;"	f	class:CudaSRE	signature:()
+CudaSRE::gmm_select	backup/my-cuda-sre.cc	/^bool CudaSRE<DataType>::gmm_select(CudaGMM &cu_gmm_)$/;"	f	class:CudaSRE	signature:(CudaGMM &cu_gmm_)
+CudaSRE::setVoiceFileName	backup/my-cuda-sre.cc	/^bool CudaSRE<DataType>::setVoiceFileName(std::string filename)$/;"	f	class:CudaSRE	signature:(std::string filename)
+CudaShiftedDeltaFeaturesOptions	OptionStruct.h	/^	CudaShiftedDeltaFeaturesOptions():$/;"	f	struct:CudaShiftedDeltaFeaturesOptions	access:public	signature:()
+CudaShiftedDeltaFeaturesOptions	OptionStruct.h	/^struct CudaShiftedDeltaFeaturesOptions$/;"	s
+CudaShiftedDeltaFeaturesOptions	backup/OptionStruct.h	/^	CudaShiftedDeltaFeaturesOptions():$/;"	f	struct:CudaShiftedDeltaFeaturesOptions	access:public	signature:()
+CudaShiftedDeltaFeaturesOptions	backup/OptionStruct.h	/^struct CudaShiftedDeltaFeaturesOptions$/;"	s
+CudaShiftedDeltaFeaturesOptions::CudaShiftedDeltaFeaturesOptions	OptionStruct.h	/^	CudaShiftedDeltaFeaturesOptions():$/;"	f	struct:CudaShiftedDeltaFeaturesOptions	access:public	signature:()
+CudaShiftedDeltaFeaturesOptions::CudaShiftedDeltaFeaturesOptions	backup/OptionStruct.h	/^	CudaShiftedDeltaFeaturesOptions():$/;"	f	struct:CudaShiftedDeltaFeaturesOptions	access:public	signature:()
+CudaShiftedDeltaFeaturesOptions::block_shift	OptionStruct.h	/^		  block_shift;$/;"	m	struct:CudaShiftedDeltaFeaturesOptions	access:public
+CudaShiftedDeltaFeaturesOptions::block_shift	backup/OptionStruct.h	/^		  block_shift;$/;"	m	struct:CudaShiftedDeltaFeaturesOptions	access:public
+CudaShiftedDeltaFeaturesOptions::num_blocks	OptionStruct.h	/^		  num_blocks,$/;"	m	struct:CudaShiftedDeltaFeaturesOptions	access:public
+CudaShiftedDeltaFeaturesOptions::num_blocks	backup/OptionStruct.h	/^		  num_blocks,$/;"	m	struct:CudaShiftedDeltaFeaturesOptions	access:public
+CudaShiftedDeltaFeaturesOptions::window	OptionStruct.h	/^	int32 window,$/;"	m	struct:CudaShiftedDeltaFeaturesOptions	access:public
+CudaShiftedDeltaFeaturesOptions::window	backup/OptionStruct.h	/^	int32 window,$/;"	m	struct:CudaShiftedDeltaFeaturesOptions	access:public
+CudaSlidingWindowCmnOptions	OptionStruct.h	/^	CudaSlidingWindowCmnOptions():$/;"	f	struct:CudaSlidingWindowCmnOptions	access:public	signature:()
+CudaSlidingWindowCmnOptions	OptionStruct.h	/^struct CudaSlidingWindowCmnOptions$/;"	s
+CudaSlidingWindowCmnOptions	backup/OptionStruct.h	/^	CudaSlidingWindowCmnOptions():$/;"	f	struct:CudaSlidingWindowCmnOptions	access:public	signature:()
+CudaSlidingWindowCmnOptions	backup/OptionStruct.h	/^struct CudaSlidingWindowCmnOptions$/;"	s
+CudaSlidingWindowCmnOptions::CudaSlidingWindowCmnOptions	OptionStruct.h	/^	CudaSlidingWindowCmnOptions():$/;"	f	struct:CudaSlidingWindowCmnOptions	access:public	signature:()
+CudaSlidingWindowCmnOptions::CudaSlidingWindowCmnOptions	backup/OptionStruct.h	/^	CudaSlidingWindowCmnOptions():$/;"	f	struct:CudaSlidingWindowCmnOptions	access:public	signature:()
+CudaSlidingWindowCmnOptions::center	OptionStruct.h	/^	bool center;$/;"	m	struct:CudaSlidingWindowCmnOptions	access:public
+CudaSlidingWindowCmnOptions::center	backup/OptionStruct.h	/^	bool center;$/;"	m	struct:CudaSlidingWindowCmnOptions	access:public
+CudaSlidingWindowCmnOptions::cmn_window	OptionStruct.h	/^	int32 cmn_window;$/;"	m	struct:CudaSlidingWindowCmnOptions	access:public
+CudaSlidingWindowCmnOptions::cmn_window	backup/OptionStruct.h	/^	int32 cmn_window;$/;"	m	struct:CudaSlidingWindowCmnOptions	access:public
+CudaSlidingWindowCmnOptions::min_window	OptionStruct.h	/^	int32 min_window;$/;"	m	struct:CudaSlidingWindowCmnOptions	access:public
+CudaSlidingWindowCmnOptions::min_window	backup/OptionStruct.h	/^	int32 min_window;$/;"	m	struct:CudaSlidingWindowCmnOptions	access:public
+CudaSlidingWindowCmnOptions::normalize_variance	OptionStruct.h	/^	bool normalize_variance;$/;"	m	struct:CudaSlidingWindowCmnOptions	access:public
+CudaSlidingWindowCmnOptions::normalize_variance	backup/OptionStruct.h	/^	bool normalize_variance;$/;"	m	struct:CudaSlidingWindowCmnOptions	access:public
+CudaTraceSpSpLower	backup/my-cuda-function-kernel.h	/^Real CudaTraceSpSpLower(const CuSpMatrix<Real> &A, const CuSpMatrix<Real> &B)$/;"	f	signature:(const CuSpMatrix<Real> &A, const CuSpMatrix<Real> &B)
+CudaTraceSpSpLower	my-cuda-function-kernel.h	/^Real CudaTraceSpSpLower(const CuSpMatrix<Real> &A, const CuSpMatrix<Real> &B)$/;"	f	signature:(const CuSpMatrix<Real> &A, const CuSpMatrix<Real> &B)
+Data	backup/my-cuda-data-struct.h	/^		inline int32_cuda* Data() const {return data_;}$/;"	f	class:CuMatrixInt	access:public	signature:() const
+Data	my-cuda-data-struct.h	/^		inline int32_cuda* Data() const {return data_;}$/;"	f	class:MatrixInt	access:public	signature:() const
+Destroy	my-cuda-data-struct.cc	/^void MatrixInt::Destroy()$/;"	f	class:MatrixInt	signature:()
+Destroy	my-cuda-data-struct.h	/^		void Destroy();$/;"	p	class:MatrixInt	access:public	signature:()
+DeviceGetName	backup/cu-device.cc	/^void CuDevice::DeviceGetName(char* name, int32 len, int32 dev) {$/;"	f	class:kaldi::CuDevice	signature:(char* name, int32 len, int32 dev)
+Dim	backup/my-cuda-fgmm.h	/^		int32 Dim() const { return means_invcovars_.NumCols(); }$/;"	f	class:kaldi::CudaFGMM	access:public	signature:() const
+Dim	backup/my-cuda-gmm.h	/^		int32 Dim() const { return means_invvars_.NumCols(); }$/;"	f	class:kaldi::CudaGMM	access:public	signature:() const
+Dim	my-cuda-fgmm.h	/^		int32 Dim() const { return means_invcovars_.NumCols(); }$/;"	f	class:kaldi::CudaFGMM	access:public	signature:() const
+Dim	my-cuda-gmm.h	/^		int32 Dim() const { return means_invvars_.NumCols(); }$/;"	f	class:kaldi::CudaGMM	access:public	signature:() const
+DoublePrecisionSupported	backup/cu-device.cc	/^bool CuDevice::DoublePrecisionSupported() {$/;"	f	class:kaldi::CuDevice	signature:()
+FeatDim	backup/my-cuda-ie.cc	/^int32 CudaIE::FeatDim() const$/;"	f	class:kaldi::CudaIE	signature:() const
+FeatDim	backup/my-cuda-ie.h	/^		int32 FeatDim() const;$/;"	p	class:kaldi::CudaIE	access:public	signature:() const
+FeatDim	my-cuda-ie.cc	/^int32 CudaIE::FeatDim() const$/;"	f	class:kaldi::CudaIE	signature:() const
+FeatDim	my-cuda-ie.h	/^		int32 FeatDim() const;$/;"	p	class:kaldi::CudaIE	access:public	signature:() const
+FinalizeActiveGpu	backup/cu-device.cc	/^void CuDevice::FinalizeActiveGpu() {$/;"	f	class:kaldi::CuDevice	signature:()
+Free	backup/cu-device.cc	/^void CuDevice::Free(void *ptr) {$/;"	f	class:kaldi::CuDevice	signature:(void *ptr)
+GaussianSelection	backup/my-cuda-gmm.cc	/^void CudaGMM::GaussianSelection(const CuMatrixBase<BaseFloat> &data,$/;"	f	class:CudaGMM	signature:(const CuMatrixBase<BaseFloat> &data, int32 num_gselect, CuMatrixInt &output) const
+GaussianSelection	backup/my-cuda-gmm.h	/^		void GaussianSelection(const CuMatrixBase<BaseFloat> &data,$/;"	p	class:kaldi::CudaGMM	access:public	signature:(const CuMatrixBase<BaseFloat> &data, int32 num_gselect, CuMatrixInt &output) const
+GaussianSelection	my-cuda-gmm.cc	/^void CudaGMM::GaussianSelection(const CuMatrixBase<BaseFloat> &data,$/;"	f	class:CudaGMM	signature:(const CuMatrixBase<BaseFloat> &data, int32 num_gselect, MatrixInt &output) const
+GaussianSelection	my-cuda-gmm.h	/^		void GaussianSelection(const CuMatrixBase<BaseFloat> &data,$/;"	p	class:kaldi::CudaGMM	access:public	signature:(const CuMatrixBase<BaseFloat> &data, int32 num_gselect, MatrixInt &output) const
+GetCenterFreqs	backup/mel-compute.h	/^		const CuVector<BaseFloat> &GetCenterFreqs() const { return center_freqs_;}$/;"	f	class:CudaMelBanks	access:public	signature:() const
+GetCenterFreqs	mel-compute.h	/^		const CuVector<BaseFloat> &GetCenterFreqs() const { return center_freqs_;}$/;"	f	class:CudaMelBanks	access:public	signature:() const
+GetFreeMemory	backup/cu-device.cc	/^std::string CuDevice::GetFreeMemory(int64* free, int64* total) const {$/;"	f	class:kaldi::CuDevice	signature:(int64* free, int64* total) const
+GetIvectorDistMean	backup/my-cuda-ie.cc	/^void CudaIE::GetIvectorDistMean(const CudaIEStats &utt_stats,$/;"	f	class:kaldi::CudaIE	signature:(const CudaIEStats &utt_stats, CuVectorBase<double> *linear, CuSpMatrix<double> *quadratic) const
+GetIvectorDistMean	backup/my-cuda-ie.h	/^		void GetIvectorDistMean(const CudaIEStats &utt_stats,$/;"	p	class:kaldi::CudaIE	access:public	signature:(const CudaIEStats &utt_stats, CuVectorBase<double> *linear, CuSpMatrix<double> *quadratic) const
+GetIvectorDistMean	my-cuda-ie.cc	/^void CudaIE::GetIvectorDistMean(const CudaIEStats &utt_stats,$/;"	f	class:kaldi::CudaIE	signature:(const CudaIEStats &utt_stats, CuVectorBase<double> *linear, CuSpMatrix<double> *quadratic) const
+GetIvectorDistMean	my-cuda-ie.h	/^		void GetIvectorDistMean(const CudaIEStats &utt_stats,$/;"	p	class:kaldi::CudaIE	access:public	signature:(const CudaIEStats &utt_stats, CuVectorBase<double> *linear, CuSpMatrix<double> *quadratic) const
+GetIvectorDistPrior	backup/my-cuda-ie.cc	/^void CudaIE::GetIvectorDistPrior(const CudaIEStats &utt_stats,$/;"	f	class:kaldi::CudaIE	signature:(const CudaIEStats &utt_stats, CuVectorBase<double> *linear, CuSpMatrix<double> *quadratic) const
+GetIvectorDistPrior	backup/my-cuda-ie.h	/^		void GetIvectorDistPrior(const CudaIEStats &utt_stats,$/;"	p	class:kaldi::CudaIE	access:public	signature:(const CudaIEStats &utt_stats, CuVectorBase<double> *linear, CuSpMatrix<double> *quadratic) const
+GetIvectorDistPrior	my-cuda-ie.cc	/^void CudaIE::GetIvectorDistPrior(const CudaIEStats &utt_stats,$/;"	f	class:kaldi::CudaIE	signature:(const CudaIEStats &utt_stats, CuVectorBase<double> *linear, CuSpMatrix<double> *quadratic) const
+GetIvectorDistPrior	my-cuda-ie.h	/^		void GetIvectorDistPrior(const CudaIEStats &utt_stats,$/;"	p	class:kaldi::CudaIE	access:public	signature:(const CudaIEStats &utt_stats, CuVectorBase<double> *linear, CuSpMatrix<double> *quadratic) const
+GetIvectorDistribution	backup/my-cuda-ie.cc	/^void CudaIE::GetIvectorDistribution(const CudaIEStats &utt_stats,$/;"	f	class:kaldi::CudaIE	signature:(const CudaIEStats &utt_stats, CuVectorBase<double> *mean) const
+GetIvectorDistribution	backup/my-cuda-ie.h	/^		void GetIvectorDistribution(const CudaIEStats &utt_stats,$/;"	p	class:kaldi::CudaIE	access:public	signature:(const CudaIEStats &utt_stats, CuVectorBase<double> *mean) const
+GetIvectorDistribution	my-cuda-ie.cc	/^void CudaIE::GetIvectorDistribution(const CudaIEStats &utt_stats,$/;"	f	class:kaldi::CudaIE	signature:(const CudaIEStats &utt_stats, CuVectorBase<double> *mean) const
+GetIvectorDistribution	my-cuda-ie.h	/^		void GetIvectorDistribution(const CudaIEStats &utt_stats,$/;"	p	class:kaldi::CudaIE	access:public	signature:(const CudaIEStats &utt_stats, CuVectorBase<double> *mean) const
+InverseMelScale	backup/mel-compute.h	/^		static inline BaseFloat InverseMelScale(BaseFloat mel_freq)$/;"	f	class:CudaMelBanks	access:public	signature:(BaseFloat mel_freq)
+InverseMelScale	mel-compute.h	/^		static inline BaseFloat InverseMelScale(BaseFloat mel_freq)$/;"	f	class:CudaMelBanks	access:public	signature:(BaseFloat mel_freq)
+IsComputeExclusive	backup/cu-device.cc	/^bool CuDevice::IsComputeExclusive() {$/;"	f	class:kaldi::CuDevice	signature:()
+IvectorDim	backup/my-cuda-ie.cc	/^int32 CudaIE::IvectorDim() const$/;"	f	class:kaldi::CudaIE	signature:() const
+IvectorDim	backup/my-cuda-ie.h	/^		int32 IvectorDim() const;$/;"	p	class:kaldi::CudaIE	access:public	signature:() const
+IvectorDim	my-cuda-ie.cc	/^int32 CudaIE::IvectorDim() const$/;"	f	class:kaldi::CudaIE	signature:() const
+IvectorDim	my-cuda-ie.h	/^		int32 IvectorDim() const;$/;"	p	class:kaldi::CudaIE	access:public	signature:() const
+KALDI_DISALLOW_COPY_AND_ASSIGN	backup/mel-compute.h	/^		KALDI_DISALLOW_COPY_AND_ASSIGN(CudaMelBanks);$/;"	p	class:CudaMelBanks	access:private	signature:(CudaMelBanks)
+KALDI_DISALLOW_COPY_AND_ASSIGN	mel-compute.h	/^		KALDI_DISALLOW_COPY_AND_ASSIGN(CudaMelBanks);$/;"	p	class:CudaMelBanks	access:private	signature:(CudaMelBanks)
+LIBNAME	Makefile	/^LIBNAME = cudalib$/;"	m
+LIBNAME	backup/Makefile	/^LIBNAME = cudalib$/;"	m
+LogLikelihoodsPreselect	backup/my-cuda-fgmm.cc	/^void CudaFGMM::LogLikelihoodsPreselect(const CuVectorBase<BaseFloat> &data,$/;"	f	class:CudaFGMM	signature:(const CuVectorBase<BaseFloat> &data, const vector<int32> &indices, Vector<BaseFloat> *loglikes) const
+LogLikelihoodsPreselect	backup/my-cuda-fgmm.h	/^		void LogLikelihoodsPreselect(const CuVectorBase<BaseFloat> &data,$/;"	p	class:kaldi::CudaFGMM	access:public	signature:(const CuVectorBase<BaseFloat> &data, const std::vector<int32> &indices, Vector<BaseFloat> *loglikes) const
+LogLikelihoodsPreselect	my-cuda-fgmm.cc	/^void CudaFGMM::LogLikelihoodsPreselect(const CuVectorBase<BaseFloat> &data,$/;"	f	class:CudaFGMM	signature:(const CuVectorBase<BaseFloat> &data, const vector<int32> &indices, Vector<BaseFloat> *loglikes) const
+LogLikelihoodsPreselect	my-cuda-fgmm.h	/^		void LogLikelihoodsPreselect(const CuVectorBase<BaseFloat> &data,$/;"	p	class:kaldi::CudaFGMM	access:public	signature:(const CuVectorBase<BaseFloat> &data, const std::vector<int32> &indices, Vector<BaseFloat> *loglikes) const
+LoglikeLihoods	backup/my-cuda-gmm.cc	/^void CudaGMM::LoglikeLihoods(const CuMatrixBase<BaseFloat> &data,$/;"	f	class:CudaGMM	signature:(const CuMatrixBase<BaseFloat> &data, CuMatrix<BaseFloat> *loglikes) const
+LoglikeLihoods	backup/my-cuda-gmm.h	/^		void LoglikeLihoods(const CuMatrixBase<BaseFloat> &data,$/;"	p	class:kaldi::CudaGMM	access:public	signature:(const CuMatrixBase<BaseFloat> &data, CuMatrix<BaseFloat> *loglikes) const
+LoglikeLihoods	my-cuda-gmm.cc	/^void CudaGMM::LoglikeLihoods(const CuMatrixBase<BaseFloat> &data,$/;"	f	class:CudaGMM	signature:(const CuMatrixBase<BaseFloat> &data, CuMatrix<BaseFloat> *loglikes) const
+LoglikeLihoods	my-cuda-gmm.h	/^		void LoglikeLihoods(const CuMatrixBase<BaseFloat> &data,$/;"	p	class:kaldi::CudaGMM	access:public	signature:(const CuMatrixBase<BaseFloat> &data, CuMatrix<BaseFloat> *loglikes) const
+MY_CONF	backup/conf.h	2;"	d
+MY_CONF	conf.h	2;"	d
+MY_CUDA_COMPUTE	backup/my-cuda-compute.h	2;"	d
+MY_CUDA_COMPUTE	my-cuda-compute.h	2;"	d
+MY_CUDA_DATA_STRUCT	backup/my-cuda-data-struct.h	2;"	d
+MY_CUDA_DATA_STRUCT	my-cuda-data-struct.h	2;"	d
+MY_CUDA_FGMM	backup/my-cuda-fgmm.h	2;"	d
+MY_CUDA_FGMM	my-cuda-fgmm.h	2;"	d
+MY_CUDA_FUNCTION	backup/my-cuda-function.h	2;"	d
+MY_CUDA_FUNCTION	my-cuda-function.h	2;"	d
+MY_CUDA_FUNCTION_KERNEL	backup/my-cuda-function-kernel.h	2;"	d
+MY_CUDA_FUNCTION_KERNEL	my-cuda-function-kernel.h	2;"	d
+MY_CUDA_FUNTION_KERNEL_ANSI	backup/my-cuda-function-kernel-ansi.h	2;"	d
+MY_CUDA_FUNTION_KERNEL_ANSI	my-cuda-function-kernel-ansi.h	2;"	d
+MY_CUDA_GMM	backup/my-cuda-gmm.h	2;"	d
+MY_CUDA_GMM	my-cuda-gmm.h	2;"	d
+MY_CUDA_IVECTOR_EXTRACTOR	backup/my-cuda-ie.h	2;"	d
+MY_CUDA_IVECTOR_EXTRACTOR	my-cuda-ie.h	2;"	d
+MY_CUDA_SRE	backup/my-cuda-sre.h	2;"	d
+MY_CUDA_SRE	my-cuda-sre.h	2;"	d
+MY_CUDA_TOOL	backup/my-cuda-tool.h	2;"	d
+MY_CUDA_TOOL	my-cuda-tool.h	2;"	d
+MY_OPTION	backup/my-option.h	2;"	d
+MY_OPTION	my-option.h	2;"	d
+M_	backup/my-cuda-ie.h	/^		std::vector<CuMatrix<double> > M_;$/;"	m	class:kaldi::CudaIE	access:private
+M_	my-cuda-ie.h	/^		std::vector<CuMatrix<double> > M_;$/;"	m	class:kaldi::CudaIE	access:private
+Malloc	backup/cu-device.cc	/^void* CuDevice::Malloc(size_t size) {$/;"	f	class:kaldi::CuDevice	signature:(size_t size)
+MallocPitch	backup/cu-device.cc	/^void* CuDevice::MallocPitch(size_t row_bytes, size_t num_rows, size_t *pitch) {$/;"	f	class:kaldi::CuDevice	signature:(size_t row_bytes, size_t num_rows, size_t *pitch)
+MatrixInt	my-cuda-data-struct.h	/^		MatrixInt() {}$/;"	f	class:MatrixInt	access:public	signature:()
+MatrixInt	my-cuda-data-struct.h	/^		MatrixInt(int32_cuda rows, int32_cuda cols)$/;"	f	class:MatrixInt	access:public	signature:(int32_cuda rows, int32_cuda cols)
+MatrixInt	my-cuda-data-struct.h	/^class MatrixInt$/;"	c
+MatrixInt::Data	my-cuda-data-struct.h	/^		inline int32_cuda* Data() const {return data_;}$/;"	f	class:MatrixInt	access:public	signature:() const
+MatrixInt::Destroy	my-cuda-data-struct.cc	/^void MatrixInt::Destroy()$/;"	f	class:MatrixInt	signature:()
+MatrixInt::Destroy	my-cuda-data-struct.h	/^		void Destroy();$/;"	p	class:MatrixInt	access:public	signature:()
+MatrixInt::MatrixInt	my-cuda-data-struct.h	/^		MatrixInt() {}$/;"	f	class:MatrixInt	access:public	signature:()
+MatrixInt::MatrixInt	my-cuda-data-struct.h	/^		MatrixInt(int32_cuda rows, int32_cuda cols)$/;"	f	class:MatrixInt	access:public	signature:(int32_cuda rows, int32_cuda cols)
+MatrixInt::NumCols	my-cuda-data-struct.h	/^		inline int32_cuda NumCols() const {return cols_;}$/;"	f	class:MatrixInt	access:public	signature:() const
+MatrixInt::NumRows	my-cuda-data-struct.h	/^		inline int32_cuda NumRows() const {return rows_;}$/;"	f	class:MatrixInt	access:public	signature:() const
+MatrixInt::Resize	my-cuda-data-struct.cc	/^void MatrixInt::Resize(int32_cuda rows, int32_cuda cols)$/;"	f	class:MatrixInt	signature:(int32_cuda rows, int32_cuda cols)
+MatrixInt::Resize	my-cuda-data-struct.h	/^		void Resize(int32_cuda rows, int32_cuda cols);$/;"	p	class:MatrixInt	access:public	signature:(int32_cuda rows, int32_cuda cols)
+MatrixInt::cols_	my-cuda-data-struct.h	/^		int32_cuda cols_;$/;"	m	class:MatrixInt	access:private
+MatrixInt::data_	my-cuda-data-struct.h	/^		int32_cuda *data_;$/;"	m	class:MatrixInt	access:private
+MatrixInt::operator ()	my-cuda-data-struct.h	/^		inline int32_cuda operator() (int32_cuda row, int32_cuda col) const$/;"	f	class:MatrixInt	access:public	signature:(int32_cuda row, int32_cuda col) const
+MatrixInt::rows_	my-cuda-data-struct.h	/^		int32_cuda rows_;$/;"	m	class:MatrixInt	access:private
+MatrixInt::~MatrixInt	my-cuda-data-struct.h	/^		~MatrixInt(){}$/;"	f	class:MatrixInt	access:private	signature:()
+MelScale	backup/mel-compute.h	/^		static inline BaseFloat MelScale(BaseFloat freq)$/;"	f	class:CudaMelBanks	access:public	signature:(BaseFloat freq)
+MelScale	mel-compute.h	/^		static inline BaseFloat MelScale(BaseFloat freq)$/;"	f	class:CudaMelBanks	access:public	signature:(BaseFloat freq)
+NumBins	backup/mel-compute.h	/^		int32 NumBins() const { return bins_.size(); }$/;"	f	class:CudaMelBanks	access:public	signature:() const
+NumBins	mel-compute.h	/^		int32 NumBins() const { return bins_.size(); }$/;"	f	class:CudaMelBanks	access:public	signature:() const
+NumCols	backup/my-cuda-data-struct.h	/^		inline int32_cuda NumCols() const {return cols_;}$/;"	f	class:CuMatrixInt	access:public	signature:() const
+NumCols	my-cuda-data-struct.h	/^		inline int32_cuda NumCols() const {return cols_;}$/;"	f	class:MatrixInt	access:public	signature:() const
+NumFrames	backup/my-cuda-sre.h	/^		int32 NumFrames() const { return cu_feature_.NumRows(); }$/;"	f	class:kaldi::CudaSRE	access:public	signature:() const
+NumFrames	my-cuda-sre.h	/^		int32 NumFrames() const { return cu_feature_.NumRows(); }$/;"	f	class:kaldi::CudaSRE	access:public	signature:() const
+NumGauss	backup/my-cuda-fgmm.h	/^		int32 NumGauss() const { return means_invcovars_.NumRows(); }$/;"	f	class:kaldi::CudaFGMM	access:public	signature:() const
+NumGauss	backup/my-cuda-gmm.h	/^		int32 NumGauss() const { return weights_.Dim(); }$/;"	f	class:kaldi::CudaGMM	access:public	signature:() const
+NumGauss	backup/my-cuda-ie.cc	/^int32 CudaIE::NumGauss() const$/;"	f	class:kaldi::CudaIE	signature:() const
+NumGauss	backup/my-cuda-ie.h	/^		int32 NumGauss() const;$/;"	p	class:kaldi::CudaIE	access:public	signature:() const
+NumGauss	my-cuda-fgmm.h	/^		int32 NumGauss() const { return means_invcovars_.NumRows(); }$/;"	f	class:kaldi::CudaFGMM	access:public	signature:() const
+NumGauss	my-cuda-gmm.h	/^		int32 NumGauss() const { return weights_.Dim(); }$/;"	f	class:kaldi::CudaGMM	access:public	signature:() const
+NumGauss	my-cuda-ie.cc	/^int32 CudaIE::NumGauss() const$/;"	f	class:kaldi::CudaIE	signature:() const
+NumGauss	my-cuda-ie.h	/^		int32 NumGauss() const;$/;"	p	class:kaldi::CudaIE	access:public	signature:() const
+NumRows	backup/my-cuda-data-struct.h	/^		inline int32_cuda NumRows() const {return rows_;}$/;"	f	class:CuMatrixInt	access:public	signature:() const
+NumRows	my-cuda-data-struct.h	/^		inline int32_cuda NumRows() const {return rows_;}$/;"	f	class:MatrixInt	access:public	signature:() const
+OBJFILES	Makefile	/^OBJFILES =  my-cuda-init.o my-cuda-gmm.o my-cuda-fgmm.o \\$/;"	m
+OBJFILES	backup/Makefile	/^OBJFILES =  my-cuda-init.o my-cuda-gmm.o my-cuda-fgmm.o \\$/;"	m
+OPTIONS_STRUCT	OptionStruct.h	2;"	d
+OPTIONS_STRUCT	backup/OptionStruct.h	2;"	d
+PaddedWindowSize	OptionStruct.h	/^	int32 PaddedWindowSize() const$/;"	f	struct:CudaFrameExtractionOptions	access:public	signature:() const
+PaddedWindowSize	backup/OptionStruct.h	/^	int32 PaddedWindowSize() const$/;"	f	struct:CudaFrameExtractionOptions	access:public	signature:() const
+PosteriorScale	backup/conf.h	17;"	d
+PosteriorScale	conf.h	17;"	d
+PrintMemoryUsage	backup/cu-device.cc	/^void CuDevice::PrintMemoryUsage() const {$/;"	f	class:kaldi::CuDevice	signature:() const
+PrintProfile	backup/cu-device.cc	/^void CuDevice::PrintProfile() {$/;"	f	class:kaldi::CuDevice	signature:()
+PriorOffset	backup/my-cuda-ie.h	/^		inline double PriorOffset() const { return prior_offset_; }$/;"	f	class:kaldi::CudaIE	access:public	signature:() const
+PriorOffset	my-cuda-ie.h	/^		inline double PriorOffset() const { return prior_offset_; }$/;"	f	class:kaldi::CudaIE	access:public	signature:() const
+Read	backup/my-cuda-fgmm.cc	/^void CudaFGMM::Read(std::istream &is, bool binary)$/;"	f	class:CudaFGMM	signature:(std::istream &is, bool binary)
+Read	backup/my-cuda-fgmm.h	/^		void Read(std::istream &is, bool binary);$/;"	p	class:kaldi::CudaFGMM	access:public	signature:(std::istream &is, bool binary)
+Read	backup/my-cuda-gmm.cc	/^void CudaGMM::Read(std::istream &is, bool binary)$/;"	f	class:CudaGMM	signature:(std::istream &is, bool binary)
+Read	backup/my-cuda-gmm.h	/^		void Read(std::istream &is, bool binary);$/;"	p	class:kaldi::CudaGMM	access:public	signature:(std::istream &is, bool binary)
+Read	backup/my-cuda-ie.cc	/^void CudaIE::Read(std::istream &is, bool binary)$/;"	f	class:kaldi::CudaIE	signature:(std::istream &is, bool binary)
+Read	backup/my-cuda-ie.h	/^		void Read(std::istream &is, bool binary);$/;"	p	class:kaldi::CudaIE	access:public	signature:(std::istream &is, bool binary)
+Read	my-cuda-fgmm.cc	/^void CudaFGMM::Read(std::istream &is, bool binary)$/;"	f	class:CudaFGMM	signature:(std::istream &is, bool binary)
+Read	my-cuda-fgmm.h	/^		void Read(std::istream &is, bool binary);$/;"	p	class:kaldi::CudaFGMM	access:public	signature:(std::istream &is, bool binary)
+Read	my-cuda-gmm.cc	/^void CudaGMM::Read(std::istream &is, bool binary)$/;"	f	class:CudaGMM	signature:(std::istream &is, bool binary)
+Read	my-cuda-gmm.h	/^		void Read(std::istream &is, bool binary);$/;"	p	class:kaldi::CudaGMM	access:public	signature:(std::istream &is, bool binary)
+Read	my-cuda-ie.cc	/^void CudaIE::Read(std::istream &is, bool binary)$/;"	f	class:kaldi::CudaIE	signature:(std::istream &is, bool binary)
+Read	my-cuda-ie.h	/^		void Read(std::istream &is, bool binary);$/;"	p	class:kaldi::CudaIE	access:public	signature:(std::istream &is, bool binary)
+Resize	backup/my-cuda-data-struct.cc	/^void CuMatrixInt::Resize(int32_cuda rows, int32_cuda cols)$/;"	f	class:CuMatrixInt	signature:(int32_cuda rows, int32_cuda cols)
+Resize	backup/my-cuda-data-struct.h	/^		void Resize(int32_cuda rows, int32_cuda cols);$/;"	p	class:CuMatrixInt	access:public	signature:(int32_cuda rows, int32_cuda cols)
+Resize	backup/my-cuda-ie.cc	/^void CudaIEStats::Resize(int32 num_gauss, int32 feat_dim)$/;"	f	class:kaldi::CudaIEStats	signature:(int32 num_gauss, int32 feat_dim)
+Resize	backup/my-cuda-ie.h	/^		void Resize(int32 num_gauss, int32 feat_dim);$/;"	p	class:kaldi::CudaIEStats	access:public	signature:(int32 num_gauss, int32 feat_dim)
+Resize	my-cuda-data-struct.cc	/^void MatrixInt::Resize(int32_cuda rows, int32_cuda cols)$/;"	f	class:MatrixInt	signature:(int32_cuda rows, int32_cuda cols)
+Resize	my-cuda-data-struct.h	/^		void Resize(int32_cuda rows, int32_cuda cols);$/;"	p	class:MatrixInt	access:public	signature:(int32_cuda rows, int32_cuda cols)
+Resize	my-cuda-ie.cc	/^void CudaIEStats::Resize(int32 num_gauss, int32 feat_dim)$/;"	f	class:kaldi::CudaIEStats	signature:(int32 num_gauss, int32 feat_dim)
+Resize	my-cuda-ie.h	/^		void Resize(int32 num_gauss, int32 feat_dim);$/;"	p	class:kaldi::CudaIEStats	access:public	signature:(int32 num_gauss, int32 feat_dim)
+ResizeInvCovars	backup/my-cuda-fgmm.cc	/^void CudaFGMM::ResizeInvCovars(int32 nmix, int32 dim)$/;"	f	class:CudaFGMM	signature:(int32 nmix, int32 dim)
+ResizeInvCovars	backup/my-cuda-fgmm.h	/^		void ResizeInvCovars(int32 nmix, int32 dim);$/;"	p	class:kaldi::CudaFGMM	access:private	signature:(int32 nmix, int32 dim)
+ResizeInvCovars	my-cuda-fgmm.cc	/^void CudaFGMM::ResizeInvCovars(int32 nmix, int32 dim)$/;"	f	class:CudaFGMM	signature:(int32 nmix, int32 dim)
+ResizeInvCovars	my-cuda-fgmm.h	/^		void ResizeInvCovars(int32 nmix, int32 dim);$/;"	p	class:kaldi::CudaFGMM	access:private	signature:(int32 nmix, int32 dim)
+SRECompute	backup/my-cuda-compute.h	/^		SRECompute() {}$/;"	f	class:kaldi::SRECompute	access:public	signature:()
+SRECompute	backup/my-cuda-compute.h	/^class SRECompute$/;"	c	namespace:kaldi
+SRECompute	my-cuda-compute.h	/^		SRECompute() {}$/;"	f	class:kaldi::SRECompute	access:public	signature:()
+SRECompute	my-cuda-compute.h	/^class SRECompute$/;"	c	namespace:kaldi
+SRECompute::cuda_sre_compute	backup/my-cuda-compute.cc	/^bool SRECompute::cuda_sre_compute(CudaInitUBM *ubm, std::string voice_file, std::string ivector_path, int valid_frames)$/;"	f	class:SRECompute	signature:(CudaInitUBM *ubm, std::string voice_file, std::string ivector_path, int valid_frames)
+SRECompute::cuda_sre_compute	my-cuda-compute.cc	/^bool SRECompute::cuda_sre_compute(CudaInitUBM *ubm, std::string voice_file, std::string ivector_path, int valid_frames)$/;"	f	class:SRECompute	signature:(CudaInitUBM *ubm, std::string voice_file, std::string ivector_path, int valid_frames)
+Scale	backup/my-cuda-ie.h	/^		void Scale(double scale);$/;"	p	class:kaldi::CudaIEStats	access:public	signature:(double scale)
+Scale	my-cuda-ie.h	/^		void Scale(double scale);$/;"	p	class:kaldi::CudaIEStats	access:public	signature:(double scale)
+SelectGpuId	backup/cu-device.cc	/^void CuDevice::SelectGpuId(std::string use_gpu) {$/;"	f	class:kaldi::CuDevice	signature:(std::string use_gpu)
+SelectGpuIdAuto	backup/cu-device.cc	/^bool CuDevice::SelectGpuIdAuto() {$/;"	f	class:kaldi::CuDevice	signature:()
+SelectGpuIdManual	backup/cu-device.cc	/^bool CuDevice::SelectGpuIdManual(int32 gpu_id) {$/;"	f	class:kaldi::CuDevice	signature:(int32 gpu_id)
+Sigma_inv_	backup/my-cuda-ie.h	/^		std::vector<CuSpMatrix<double> > Sigma_inv_;$/;"	m	class:kaldi::CudaIE	access:private
+Sigma_inv_	my-cuda-ie.h	/^		std::vector<CuSpMatrix<double> > Sigma_inv_;$/;"	m	class:kaldi::CudaIE	access:private
+Sigma_inv_M_	backup/my-cuda-ie.h	/^		std::vector<CuMatrix<double> > Sigma_inv_M_;$/;"	m	class:kaldi::CudaIE	access:private
+Sigma_inv_M_	my-cuda-ie.h	/^		std::vector<CuMatrix<double> > Sigma_inv_M_;$/;"	m	class:kaldi::CudaIE	access:private
+TESTFILES	Makefile	/^TESTFILES =$/;"	m
+TESTFILES	backup/Makefile	/^TESTFILES =$/;"	m
+U_	backup/my-cuda-ie.h	/^		CuMatrix<double> U_;$/;"	m	class:kaldi::CudaIE	access:private
+U_	my-cuda-ie.h	/^		CuMatrix<double> U_;$/;"	m	class:kaldi::CudaIE	access:private
+VtlnWarpFreq	backup/mel-compute.cc	/^BaseFloat CudaMelBanks::VtlnWarpFreq(BaseFloat vtln_low_cutoff,  \/\/ upper+lower frequency cutoffs for VTLN.$/;"	f	class:CudaMelBanks	signature:(BaseFloat vtln_low_cutoff, BaseFloat vtln_high_cutoff, BaseFloat low_freq, BaseFloat high_freq, BaseFloat vtln_warp_factor, BaseFloat freq)
+VtlnWarpFreq	backup/mel-compute.h	/^		static BaseFloat VtlnWarpFreq(BaseFloat vtln_low_cutoff,$/;"	p	class:CudaMelBanks	access:public	signature:(BaseFloat vtln_low_cutoff, BaseFloat vtln_high_cutoff, BaseFloat low_freq, BaseFloat high_freq, BaseFloat vtln_warp_factor, BaseFloat freq)
+VtlnWarpFreq	mel-compute.cc	/^BaseFloat CudaMelBanks::VtlnWarpFreq(BaseFloat vtln_low_cutoff,  \/\/ upper+lower frequency cutoffs for VTLN.$/;"	f	class:CudaMelBanks	signature:(BaseFloat vtln_low_cutoff, BaseFloat vtln_high_cutoff, BaseFloat low_freq, BaseFloat high_freq, BaseFloat vtln_warp_factor, BaseFloat freq)
+VtlnWarpFreq	mel-compute.h	/^		static BaseFloat VtlnWarpFreq(BaseFloat vtln_low_cutoff,$/;"	p	class:CudaMelBanks	access:public	signature:(BaseFloat vtln_low_cutoff, BaseFloat vtln_high_cutoff, BaseFloat low_freq, BaseFloat high_freq, BaseFloat vtln_warp_factor, BaseFloat freq)
+VtlnWarpMelFreq	backup/mel-compute.cc	/^BaseFloat CudaMelBanks::VtlnWarpMelFreq(BaseFloat vtln_low_cutoff,  \/\/ upper+lower frequency cutoffs for VTLN.$/;"	f	class:CudaMelBanks	signature:(BaseFloat vtln_low_cutoff, BaseFloat vtln_high_cutoff, BaseFloat low_freq, BaseFloat high_freq, BaseFloat vtln_warp_factor, BaseFloat mel_freq)
+VtlnWarpMelFreq	backup/mel-compute.h	/^		static BaseFloat VtlnWarpMelFreq(BaseFloat vtln_low_cutoff,$/;"	p	class:CudaMelBanks	access:public	signature:(BaseFloat vtln_low_cutoff, BaseFloat vtln_high_cutoff, BaseFloat low_freq, BaseFloat high_freq, BaseFloat vtln_warp_factor, BaseFloat freq)
+VtlnWarpMelFreq	mel-compute.cc	/^BaseFloat CudaMelBanks::VtlnWarpMelFreq(BaseFloat vtln_low_cutoff,  \/\/ upper+lower frequency cutoffs for VTLN.$/;"	f	class:CudaMelBanks	signature:(BaseFloat vtln_low_cutoff, BaseFloat vtln_high_cutoff, BaseFloat low_freq, BaseFloat high_freq, BaseFloat vtln_warp_factor, BaseFloat mel_freq)
+VtlnWarpMelFreq	mel-compute.h	/^		static BaseFloat VtlnWarpMelFreq(BaseFloat vtln_low_cutoff,$/;"	p	class:CudaMelBanks	access:public	signature:(BaseFloat vtln_low_cutoff, BaseFloat vtln_high_cutoff, BaseFloat low_freq, BaseFloat high_freq, BaseFloat vtln_warp_factor, BaseFloat freq)
+WindowShift	OptionStruct.h	/^	int32 WindowShift() const$/;"	f	struct:CudaFrameExtractionOptions	access:public	signature:() const
+WindowShift	backup/OptionStruct.h	/^	int32 WindowShift() const$/;"	f	struct:CudaFrameExtractionOptions	access:public	signature:() const
+WindowSize	OptionStruct.h	/^	int32 WindowSize() const$/;"	f	struct:CudaFrameExtractionOptions	access:public	signature:() const
+WindowSize	backup/OptionStruct.h	/^	int32 WindowSize() const$/;"	f	struct:CudaFrameExtractionOptions	access:public	signature:() const
+X_	backup/my-cuda-ie.h	/^		CuMatrix<double> X_;$/;"	m	class:kaldi::CudaIEStats	access:private
+X_	my-cuda-ie.h	/^		CuMatrix<double> X_;$/;"	m	class:kaldi::CudaIEStats	access:private
+_D_my_cuda_compute_fft	backup/my-cuda-function-kernel-ansi.h	/^	void _D_my_cuda_compute_fft(double *data, int dim);$/;"	p	signature:(double *data, int dim)
+_D_my_cuda_compute_fft	my-cuda-function-kernel-ansi.h	/^	void _D_my_cuda_compute_fft(double *data, int dim);$/;"	p	signature:(double *data, int dim)
+_D_my_cuda_gmm_select	backup/my-cuda-function-kernel-ansi.h	/^	void _D_my_cuda_gmm_select(int32_cuda Gr, int32_cuda Bl, double *data, MatrixDim d, int32_cuda num_gselect, int32_cuda *gmm_out);$/;"	p	signature:(int32_cuda Gr, int32_cuda Bl, double *data, MatrixDim d, int32_cuda num_gselect, int32_cuda *gmm_out)
+_D_my_cuda_gmm_select	my-cuda-function-kernel-ansi.h	/^	void _D_my_cuda_gmm_select(int32_cuda Gr, int32_cuda Bl, double *data, MatrixDim d, int32_cuda num_gselect, int32_cuda *gmm_out);$/;"	p	signature:(int32_cuda Gr, int32_cuda Bl, double *data, MatrixDim d, int32_cuda num_gselect, int32_cuda *gmm_out)
+_F_my_cuda_compute_fft	backup/my-cuda-function-kernel-ansi.h	/^	void _F_my_cuda_compute_fft(float *data, int dim);$/;"	p	signature:(float *data, int dim)
+_F_my_cuda_compute_fft	my-cuda-function-kernel-ansi.h	/^	void _F_my_cuda_compute_fft(float *data, int dim);$/;"	p	signature:(float *data, int dim)
+_F_my_cuda_gmm_select	backup/my-cuda-function-kernel-ansi.h	/^	void _F_my_cuda_gmm_select(int32_cuda Gr, int32_cuda Bl, float *data, MatrixDim d, int32_cuda num_gselect, int32_cuda *gmm_out);$/;"	p	signature:(int32_cuda Gr, int32_cuda Bl, float *data, MatrixDim d, int32_cuda num_gselect, int32_cuda *gmm_out)
+_F_my_cuda_gmm_select	my-cuda-function-kernel-ansi.h	/^	void _F_my_cuda_gmm_select(int32_cuda Gr, int32_cuda Bl, float *data, MatrixDim d, int32_cuda num_gselect, int32_cuda *gmm_out);$/;"	p	signature:(int32_cuda Gr, int32_cuda Bl, float *data, MatrixDim d, int32_cuda num_gselect, int32_cuda *gmm_out)
+_my_cuda_gmm_select	backup/my-cuda-function-kernel.h	/^inline void _my_cuda_gmm_select(int32_cuda Gr, int32_cuda Bl, double *data, MatrixDim d, int32_cuda num_gselect, int32_cuda *gmm_out)$/;"	f	signature:(int32_cuda Gr, int32_cuda Bl, double *data, MatrixDim d, int32_cuda num_gselect, int32_cuda *gmm_out)
+_my_cuda_gmm_select	backup/my-cuda-function-kernel.h	/^inline void _my_cuda_gmm_select(int32_cuda Gr, int32_cuda Bl, float *data, MatrixDim d, int32_cuda num_gselect, int32_cuda *gmm_out)$/;"	f	signature:(int32_cuda Gr, int32_cuda Bl, float *data, MatrixDim d, int32_cuda num_gselect, int32_cuda *gmm_out)
+_my_cuda_gmm_select	my-cuda-function-kernel.h	/^inline void _my_cuda_gmm_select(int32_cuda Gr, int32_cuda Bl, double *data, MatrixDim d, int32_cuda num_gselect, int32_cuda *gmm_out)$/;"	f	signature:(int32_cuda Gr, int32_cuda Bl, double *data, MatrixDim d, int32_cuda num_gselect, int32_cuda *gmm_out)
+_my_cuda_gmm_select	my-cuda-function-kernel.h	/^inline void _my_cuda_gmm_select(int32_cuda Gr, int32_cuda Bl, float *data, MatrixDim d, int32_cuda num_gselect, int32_cuda *gmm_out)$/;"	f	signature:(int32_cuda Gr, int32_cuda Bl, float *data, MatrixDim d, int32_cuda num_gselect, int32_cuda *gmm_out)
+bins_	backup/mel-compute.h	/^		vector<std::pair<int32, CuVector<BaseFloat> > > bins_;$/;"	m	class:CudaMelBanks	access:private
+bins_	mel-compute.h	/^		vector<std::pair<int32, CuVector<BaseFloat> > > bins_;$/;"	m	class:CudaMelBanks	access:private
+block_shift	OptionStruct.h	/^		  block_shift;$/;"	m	struct:CudaShiftedDeltaFeaturesOptions	access:public
+block_shift	backup/OptionStruct.h	/^		  block_shift;$/;"	m	struct:CudaShiftedDeltaFeaturesOptions	access:public
+center	OptionStruct.h	/^	bool center;$/;"	m	struct:CudaSlidingWindowCmnOptions	access:public
+center	backup/OptionStruct.h	/^	bool center;$/;"	m	struct:CudaSlidingWindowCmnOptions	access:public
+center_freqs_	backup/mel-compute.h	/^		CuVector<BaseFloat> center_freqs_;$/;"	m	class:CudaMelBanks	access:private
+center_freqs_	mel-compute.h	/^		CuVector<BaseFloat> center_freqs_;$/;"	m	class:CudaMelBanks	access:private
+cmnCenter	backup/conf.h	13;"	d
+cmnCenter	conf.h	13;"	d
+cmnWindow	backup/conf.h	14;"	d
+cmnWindow	conf.h	14;"	d
+cmn_window	OptionStruct.h	/^	int32 cmn_window;$/;"	m	struct:CudaSlidingWindowCmnOptions	access:public
+cmn_window	backup/OptionStruct.h	/^	int32 cmn_window;$/;"	m	struct:CudaSlidingWindowCmnOptions	access:public
+cols_	backup/my-cuda-data-struct.h	/^		int32_cuda cols_;$/;"	m	class:CuMatrixInt	access:private
+cols_	my-cuda-data-struct.h	/^		int32_cuda cols_;$/;"	m	class:MatrixInt	access:private
+compute	backup/my-cuda-function.h	/^		void compute(Real *data);$/;"	p	class:CudaFFT	access:public	signature:(Real *data)
+compute	backup/my-cuda-function.h	/^void CudaFFT<Real>::compute(Real *data)$/;"	f	class:CudaFFT	signature:(Real *data)
+compute	my-cuda-function.h	/^		void compute(Real *data);$/;"	p	class:CudaFFT	access:public	signature:(Real *data)
+compute	my-cuda-function.h	/^void CudaFFT<Real>::compute(Real *data)$/;"	f	class:CudaFFT	signature:(Real *data)
+cu_feature_	backup/my-cuda-sre.h	/^		CuMatrix<BaseFloat> cu_feature_;$/;"	m	class:kaldi::CudaSRE	access:private
+cu_feature_	my-cuda-sre.h	/^		CuMatrix<BaseFloat> cu_feature_;$/;"	m	class:kaldi::CudaSRE	access:private
+cu_gselect_	backup/my-cuda-sre.h	/^		CuMatrixInt cu_gselect_;$/;"	m	class:kaldi::CudaSRE	access:private
+cu_gselect_	my-cuda-sre.h	/^		MatrixInt cu_gselect_;$/;"	m	class:kaldi::CudaSRE	access:private
+cu_post_	backup/my-cuda-sre.h	/^		Posterior cu_post_;$/;"	m	class:kaldi::CudaSRE	access:private
+cu_post_	my-cuda-sre.h	/^		Posterior cu_post_;$/;"	m	class:kaldi::CudaSRE	access:private
+cu_stats_	backup/my-cuda-sre.h	/^		CudaIEStats cu_stats_;$/;"	m	class:kaldi::CudaSRE	access:private
+cu_stats_	my-cuda-sre.h	/^		CudaIEStats cu_stats_;$/;"	m	class:kaldi::CudaSRE	access:private
+cuda_compute_ivector	backup/my-cuda-sre.cc	/^bool CudaSRE<DataType>::cuda_compute_ivector(CudaIE &ie)$/;"	f	class:CudaSRE	signature:(CudaIE &ie)
+cuda_compute_ivector	backup/my-cuda-sre.h	/^		bool cuda_compute_ivector(CudaIE &ie);$/;"	p	class:kaldi::CudaSRE	access:public	signature:(CudaIE &ie)
+cuda_compute_ivector	my-cuda-sre.cc	/^bool CudaSRE<DataType>::cuda_compute_ivector(CudaIE &ie)$/;"	f	class:kaldi::CudaSRE	signature:(CudaIE &ie)
+cuda_compute_ivector	my-cuda-sre.h	/^		bool cuda_compute_ivector(CudaIE &ie);$/;"	p	class:kaldi::CudaSRE	access:public	signature:(CudaIE &ie)
+cuda_compute_mfcc	backup/my-cuda-sre.cc	/^bool CudaSRE<DataType>::cuda_compute_mfcc()$/;"	f	class:CudaSRE	signature:()
+cuda_compute_mfcc	backup/my-cuda-sre.h	/^		bool cuda_compute_mfcc();$/;"	p	class:kaldi::CudaSRE	access:public	signature:()
+cuda_compute_mfcc	my-cuda-sre.cc	/^bool CudaSRE<DataType>::cuda_compute_mfcc()$/;"	f	class:kaldi::CudaSRE	signature:()
+cuda_compute_mfcc	my-cuda-sre.h	/^		bool cuda_compute_mfcc();$/;"	p	class:kaldi::CudaSRE	access:public	signature:()
+cuda_compute_posterior	backup/my-cuda-sre.cc	/^bool CudaSRE<DataType>::cuda_compute_posterior(FullGmm &fgmm_)$/;"	f	class:CudaSRE	signature:(FullGmm &fgmm_)
+cuda_compute_posterior	backup/my-cuda-sre.h	/^		bool cuda_compute_posterior(FullGmm &fgmm_);$/;"	p	class:kaldi::CudaSRE	access:public	signature:(FullGmm &fgmm_)
+cuda_compute_posterior	my-cuda-sre.cc	/^bool CudaSRE<DataType>::cuda_compute_posterior(FullGmm &fgmm_)$/;"	f	class:kaldi::CudaSRE	signature:(FullGmm &fgmm_)
+cuda_compute_posterior	my-cuda-sre.h	/^		bool cuda_compute_posterior(FullGmm &fgmm_);$/;"	p	class:kaldi::CudaSRE	access:public	signature:(FullGmm &fgmm_)
+cuda_ivector_mean	backup/my-cuda-tool.h	/^inline bool cuda_ivector_mean(CuVector<double> &ivector)$/;"	f	signature:(CuVector<double> &ivector)
+cuda_ivector_mean	my-cuda-tool.h	/^inline bool cuda_ivector_mean(CuVector<double> &ivector)$/;"	f	signature:(CuVector<double> &ivector)
+cuda_ivector_normalize_length	backup/my-cuda-tool.h	/^inline bool cuda_ivector_normalize_length(CuVector<double> &ivector)$/;"	f	signature:(CuVector<double> &ivector)
+cuda_ivector_normalize_length	my-cuda-tool.h	/^inline bool cuda_ivector_normalize_length(CuVector<double> &ivector)$/;"	f	signature:(CuVector<double> &ivector)
+cuda_sre_compute	backup/my-cuda-compute.cc	/^bool SRECompute::cuda_sre_compute(CudaInitUBM *ubm, std::string voice_file, std::string ivector_path, int valid_frames)$/;"	f	class:SRECompute	signature:(CudaInitUBM *ubm, std::string voice_file, std::string ivector_path, int valid_frames)
+cuda_sre_compute	backup/my-cuda-compute.h	/^		bool cuda_sre_compute(CudaInitUBM *ubm, std::string voice_file, std::string ivector_path, int valid_frames);$/;"	p	class:kaldi::SRECompute	access:public	signature:(CudaInitUBM *ubm, std::string voice_file, std::string ivector_path, int valid_frames)
+cuda_sre_compute	my-cuda-compute.cc	/^bool SRECompute::cuda_sre_compute(CudaInitUBM *ubm, std::string voice_file, std::string ivector_path, int valid_frames)$/;"	f	class:SRECompute	signature:(CudaInitUBM *ubm, std::string voice_file, std::string ivector_path, int valid_frames)
+cuda_sre_compute	my-cuda-compute.h	/^		bool cuda_sre_compute(CudaInitUBM *ubm, std::string voice_file, std::string ivector_path, int valid_frames);$/;"	p	class:kaldi::SRECompute	access:public	signature:(CudaInitUBM *ubm, std::string voice_file, std::string ivector_path, int valid_frames)
+data_	backup/my-cuda-data-struct.h	/^		int32_cuda *data_;$/;"	m	class:CuMatrixInt	access:private
+data_	my-cuda-data-struct.h	/^		int32_cuda *data_;$/;"	m	class:MatrixInt	access:private
+debugMel	backup/conf.h	25;"	d
+debugMel	conf.h	25;"	d
+debug_	backup/mel-compute.h	/^		bool debug_;$/;"	m	class:CudaMelBanks	access:private
+debug_	mel-compute.h	/^		bool debug_;$/;"	m	class:CudaMelBanks	access:private
+debug_mel	OptionStruct.h	/^	bool debug_mel;$/;"	m	struct:CudaMelBanksOptions	access:public
+debug_mel	backup/OptionStruct.h	/^	bool debug_mel;$/;"	m	struct:CudaMelBanksOptions	access:public
+deltaOrder	backup/conf.h	19;"	d
+deltaOrder	conf.h	19;"	d
+deltaWindow	backup/conf.h	18;"	d
+deltaWindow	conf.h	18;"	d
+delta_opts	backup/my-option.h	/^	DeltaFeaturesOptions delta_opts;$/;"	m	struct:my_option	access:public
+delta_opts	my-option.h	/^	DeltaFeaturesOptions delta_opts;$/;"	m	struct:my_option	access:public
+dim_	backup/my-cuda-function.h	/^		int32 dim_;$/;"	m	class:CudaFFT	access:private
+dim_	my-cuda-function.h	/^		int32 dim_;$/;"	m	class:CudaFFT	access:private
+dither	OptionStruct.h	/^	BaseFloat dither;$/;"	m	struct:CudaFrameExtractionOptions	access:public
+dither	backup/OptionStruct.h	/^	BaseFloat dither;$/;"	m	struct:CudaFrameExtractionOptions	access:public
+fgmm_	backup/my-cuda-init.h	/^		FullGmm fgmm_;$/;"	m	class:kaldi::CudaInitUBM	access:public
+fgmm_	my-cuda-init.h	/^		FullGmm fgmm_;$/;"	m	class:kaldi::CudaInitUBM	access:public
+frameLength	backup/conf.h	6;"	d
+frameLength	conf.h	6;"	d
+frame_length_ms	OptionStruct.h	/^	BaseFloat frame_length_ms;$/;"	m	struct:CudaFrameExtractionOptions	access:public
+frame_length_ms	backup/OptionStruct.h	/^	BaseFloat frame_length_ms;$/;"	m	struct:CudaFrameExtractionOptions	access:public
+frame_shift_ms	OptionStruct.h	/^	BaseFloat frame_shift_ms;$/;"	m	struct:CudaFrameExtractionOptions	access:public
+frame_shift_ms	backup/OptionStruct.h	/^	BaseFloat frame_shift_ms;$/;"	m	struct:CudaFrameExtractionOptions	access:public
+gamma_	backup/my-cuda-ie.h	/^		CuVector<double> gamma_;$/;"	m	class:kaldi::CudaIEStats	access:private
+gamma_	my-cuda-ie.h	/^		CuVector<double> gamma_;$/;"	m	class:kaldi::CudaIEStats	access:private
+gconsts_	backup/my-cuda-fgmm.h	/^		CuVector<BaseFloat> gconsts_;$/;"	m	class:kaldi::CudaFGMM	access:private
+gconsts_	backup/my-cuda-gmm.h	/^		CuVector<BaseFloat> gconsts_;$/;"	m	class:kaldi::CudaGMM	access:private
+gconsts_	backup/my-cuda-ie.h	/^		CuVector<double> gconsts_;$/;"	m	class:kaldi::CudaIE	access:private
+gconsts_	my-cuda-fgmm.h	/^		CuVector<BaseFloat> gconsts_;$/;"	m	class:kaldi::CudaFGMM	access:private
+gconsts_	my-cuda-gmm.h	/^		CuVector<BaseFloat> gconsts_;$/;"	m	class:kaldi::CudaGMM	access:private
+gconsts_	my-cuda-ie.h	/^		CuVector<double> gconsts_;$/;"	m	class:kaldi::CudaIE	access:private
+getGpuID	my-cuda-init.cc	/^int CudaInitUBM::getGpuID()$/;"	f	class:CudaInitUBM	signature:()
+getGpuID	my-cuda-init.h	/^		int getGpuID();$/;"	p	class:kaldi::CudaInitUBM	access:public	signature:()
+get_cuda_feature	backup/my-cuda-sre.cc	/^CuMatrix<BaseFloat> CudaSRE<DataType>::get_cuda_feature()$/;"	f	class:CudaSRE	signature:()
+get_cuda_feature	backup/my-cuda-sre.h	/^		CuMatrix<BaseFloat> get_cuda_feature();$/;"	p	class:kaldi::CudaSRE	access:public	signature:()
+get_cuda_feature	my-cuda-sre.cc	/^CuMatrix<BaseFloat> CudaSRE<DataType>::get_cuda_feature()$/;"	f	class:kaldi::CudaSRE	signature:()
+get_cuda_feature	my-cuda-sre.h	/^		CuMatrix<BaseFloat> get_cuda_feature();$/;"	p	class:kaldi::CudaSRE	access:public	signature:()
+get_ivector	backup/my-cuda-sre.cc	/^Vector<double> CudaSRE<DataType>::get_ivector()$/;"	f	class:CudaSRE	signature:()
+get_ivector	backup/my-cuda-sre.h	/^		Vector<double> get_ivector();$/;"	p	class:kaldi::CudaSRE	access:public	signature:()
+get_ivector	my-cuda-sre.cc	/^Vector<double> CudaSRE<DataType>::get_ivector()$/;"	f	class:kaldi::CudaSRE	signature:()
+get_ivector	my-cuda-sre.h	/^		Vector<double> get_ivector();$/;"	p	class:kaldi::CudaSRE	access:public	signature:()
+global_device_	backup/cu-device.cc	/^CuDevice CuDevice::global_device_;$/;"	m	class:kaldi::CuDevice	file:
+gmm_	backup/my-cuda-init.h	/^		CudaGMM gmm_;$/;"	m	class:kaldi::CudaInitUBM	access:public
+gmm_	my-cuda-init.h	/^		CudaGMM gmm_;$/;"	m	class:kaldi::CudaInitUBM	access:public
+gmm_select	backup/my-cuda-sre.cc	/^bool CudaSRE<DataType>::gmm_select(CudaGMM &cu_gmm_)$/;"	f	class:CudaSRE	signature:(CudaGMM &cu_gmm_)
+gmm_select	backup/my-cuda-sre.h	/^		bool gmm_select(CudaGMM &cu_gmm_);$/;"	p	class:kaldi::CudaSRE	access:public	signature:(CudaGMM &cu_gmm_)
+gmm_select	my-cuda-sre.cc	/^bool CudaSRE<DataType>::gmm_select(CudaGMM &cu_gmm_)$/;"	f	class:kaldi::CudaSRE	signature:(CudaGMM &cu_gmm_)
+gmm_select	my-cuda-sre.h	/^		bool gmm_select(CudaGMM &cu_gmm_);$/;"	p	class:kaldi::CudaSRE	access:public	signature:(CudaGMM &cu_gmm_)
+gpuid_	my-cuda-init.h	/^		int gpuid_;$/;"	m	class:kaldi::CudaInitUBM	access:public
+greater_pair	backup/cu-device.cc	/^bool greater_pair(const std::pair<TA, TB> &left, const std::pair<TA, TB>& right) {$/;"	f	namespace:kaldi	signature:(const std::pair<TA, TB> &left, const std::pair<TA, TB>& right)
+highFreq	backup/conf.h	8;"	d
+highFreq	conf.h	8;"	d
+high_freq	OptionStruct.h	/^	BaseFloat high_freq;$/;"	m	struct:CudaMelBanksOptions	access:public
+high_freq	backup/OptionStruct.h	/^	BaseFloat high_freq;$/;"	m	struct:CudaMelBanksOptions	access:public
+htkMode	backup/conf.h	26;"	d
+htkMode	conf.h	26;"	d
+htk_mode	OptionStruct.h	/^	bool htk_mode;$/;"	m	struct:CudaMelBanksOptions	access:public
+htk_mode	backup/OptionStruct.h	/^	bool htk_mode;$/;"	m	struct:CudaMelBanksOptions	access:public
+htk_mode_	backup/mel-compute.h	/^		bool htk_mode_;$/;"	m	class:CudaMelBanks	access:private
+htk_mode_	mel-compute.h	/^		bool htk_mode_;$/;"	m	class:CudaMelBanks	access:private
+ie_	backup/my-cuda-init.h	/^		CudaIE ie_;$/;"	m	class:kaldi::CudaInitUBM	access:public
+ie_	my-cuda-init.h	/^		CudaIE ie_;$/;"	m	class:kaldi::CudaInitUBM	access:public
+inv_covars_	backup/my-cuda-fgmm.h	/^		std::vector<CuSpMatrix<BaseFloat> > inv_covars_;$/;"	m	class:kaldi::CudaFGMM	access:private
+inv_covars_	my-cuda-fgmm.h	/^		std::vector<CuSpMatrix<BaseFloat> > inv_covars_;$/;"	m	class:kaldi::CudaFGMM	access:private
+inv_vars_	backup/my-cuda-gmm.h	/^		CuMatrix<BaseFloat> inv_vars_;$/;"	m	class:kaldi::CudaGMM	access:private
+inv_vars_	my-cuda-gmm.h	/^		CuMatrix<BaseFloat> inv_vars_;$/;"	m	class:kaldi::CudaGMM	access:private
+ivector_	backup/my-cuda-sre.h	/^		CuVector<double> ivector_;$/;"	m	class:kaldi::CudaSRE	access:private
+ivector_	my-cuda-sre.h	/^		CuVector<double> ivector_;$/;"	m	class:kaldi::CudaSRE	access:private
+ivector_result_	backup/my-cuda-sre.h	/^		Vector<double> ivector_result_;$/;"	m	class:kaldi::CudaSRE	access:private
+ivector_result_	my-cuda-sre.h	/^		Vector<double> ivector_result_;$/;"	m	class:kaldi::CudaSRE	access:private
+kaldi	backup/cu-device.cc	/^namespace kaldi {$/;"	n	file:
+kaldi	backup/my-cuda-compute.h	/^namespace kaldi$/;"	n
+kaldi	backup/my-cuda-fgmm.h	/^namespace kaldi$/;"	n
+kaldi	backup/my-cuda-gmm.h	/^namespace kaldi$/;"	n
+kaldi	backup/my-cuda-ie.cc	/^namespace kaldi$/;"	n	file:
+kaldi	backup/my-cuda-ie.h	/^namespace kaldi$/;"	n
+kaldi	backup/my-cuda-init.h	/^namespace kaldi$/;"	n
+kaldi	backup/my-cuda-sre.h	/^namespace kaldi$/;"	n
+kaldi	my-cuda-compute.h	/^namespace kaldi$/;"	n
+kaldi	my-cuda-fgmm.h	/^namespace kaldi$/;"	n
+kaldi	my-cuda-gmm.h	/^namespace kaldi$/;"	n
+kaldi	my-cuda-ie.cc	/^namespace kaldi$/;"	n	file:
+kaldi	my-cuda-ie.h	/^namespace kaldi$/;"	n
+kaldi	my-cuda-init.h	/^namespace kaldi$/;"	n
+kaldi	my-cuda-sre.cc	/^namespace kaldi$/;"	n	file:
+kaldi	my-cuda-sre.h	/^namespace kaldi$/;"	n
+kaldi::CuDevice::AccuProfile	backup/cu-device.cc	/^void CuDevice::AccuProfile(const std::string &key, double time) {$/;"	f	class:kaldi::CuDevice	signature:(const std::string &key, double time)
+kaldi::CuDevice::CheckGpuHealth	backup/cu-device.cc	/^void CuDevice::CheckGpuHealth() {$/;"	f	class:kaldi::CuDevice	signature:()
+kaldi::CuDevice::CuDevice	backup/cu-device.cc	/^CuDevice::CuDevice(): active_gpu_id_(-1), verbose_(true)$/;"	f	class:kaldi::CuDevice	signature:()
+kaldi::CuDevice::DeviceGetName	backup/cu-device.cc	/^void CuDevice::DeviceGetName(char* name, int32 len, int32 dev) {$/;"	f	class:kaldi::CuDevice	signature:(char* name, int32 len, int32 dev)
+kaldi::CuDevice::DoublePrecisionSupported	backup/cu-device.cc	/^bool CuDevice::DoublePrecisionSupported() {$/;"	f	class:kaldi::CuDevice	signature:()
+kaldi::CuDevice::FinalizeActiveGpu	backup/cu-device.cc	/^void CuDevice::FinalizeActiveGpu() {$/;"	f	class:kaldi::CuDevice	signature:()
+kaldi::CuDevice::Free	backup/cu-device.cc	/^void CuDevice::Free(void *ptr) {$/;"	f	class:kaldi::CuDevice	signature:(void *ptr)
+kaldi::CuDevice::GetFreeMemory	backup/cu-device.cc	/^std::string CuDevice::GetFreeMemory(int64* free, int64* total) const {$/;"	f	class:kaldi::CuDevice	signature:(int64* free, int64* total) const
+kaldi::CuDevice::IsComputeExclusive	backup/cu-device.cc	/^bool CuDevice::IsComputeExclusive() {$/;"	f	class:kaldi::CuDevice	signature:()
+kaldi::CuDevice::Malloc	backup/cu-device.cc	/^void* CuDevice::Malloc(size_t size) {$/;"	f	class:kaldi::CuDevice	signature:(size_t size)
+kaldi::CuDevice::MallocPitch	backup/cu-device.cc	/^void* CuDevice::MallocPitch(size_t row_bytes, size_t num_rows, size_t *pitch) {$/;"	f	class:kaldi::CuDevice	signature:(size_t row_bytes, size_t num_rows, size_t *pitch)
+kaldi::CuDevice::PrintMemoryUsage	backup/cu-device.cc	/^void CuDevice::PrintMemoryUsage() const {$/;"	f	class:kaldi::CuDevice	signature:() const
+kaldi::CuDevice::PrintProfile	backup/cu-device.cc	/^void CuDevice::PrintProfile() {$/;"	f	class:kaldi::CuDevice	signature:()
+kaldi::CuDevice::SelectGpuId	backup/cu-device.cc	/^void CuDevice::SelectGpuId(std::string use_gpu) {$/;"	f	class:kaldi::CuDevice	signature:(std::string use_gpu)
+kaldi::CuDevice::SelectGpuIdAuto	backup/cu-device.cc	/^bool CuDevice::SelectGpuIdAuto() {$/;"	f	class:kaldi::CuDevice	signature:()
+kaldi::CuDevice::SelectGpuIdManual	backup/cu-device.cc	/^bool CuDevice::SelectGpuIdManual(int32 gpu_id) {$/;"	f	class:kaldi::CuDevice	signature:(int32 gpu_id)
+kaldi::CuDevice::global_device_	backup/cu-device.cc	/^CuDevice CuDevice::global_device_;$/;"	m	class:kaldi::CuDevice	file:
+kaldi::CuDevice::~CuDevice	backup/cu-device.cc	/^CuDevice::~CuDevice() {$/;"	f	class:kaldi::CuDevice	signature:()
+kaldi::CudaFGMM	backup/my-cuda-fgmm.h	/^class CudaFGMM$/;"	c	namespace:kaldi
+kaldi::CudaFGMM	my-cuda-fgmm.h	/^class CudaFGMM$/;"	c	namespace:kaldi
+kaldi::CudaFGMM::CudaFGMM	backup/my-cuda-fgmm.h	/^		CudaFGMM() {}$/;"	f	class:kaldi::CudaFGMM	access:public	signature:()
+kaldi::CudaFGMM::CudaFGMM	my-cuda-fgmm.h	/^		CudaFGMM() {}$/;"	f	class:kaldi::CudaFGMM	access:public	signature:()
+kaldi::CudaFGMM::Dim	backup/my-cuda-fgmm.h	/^		int32 Dim() const { return means_invcovars_.NumCols(); }$/;"	f	class:kaldi::CudaFGMM	access:public	signature:() const
+kaldi::CudaFGMM::Dim	my-cuda-fgmm.h	/^		int32 Dim() const { return means_invcovars_.NumCols(); }$/;"	f	class:kaldi::CudaFGMM	access:public	signature:() const
+kaldi::CudaFGMM::LogLikelihoodsPreselect	backup/my-cuda-fgmm.h	/^		void LogLikelihoodsPreselect(const CuVectorBase<BaseFloat> &data,$/;"	p	class:kaldi::CudaFGMM	access:public	signature:(const CuVectorBase<BaseFloat> &data, const std::vector<int32> &indices, Vector<BaseFloat> *loglikes) const
+kaldi::CudaFGMM::LogLikelihoodsPreselect	my-cuda-fgmm.h	/^		void LogLikelihoodsPreselect(const CuVectorBase<BaseFloat> &data,$/;"	p	class:kaldi::CudaFGMM	access:public	signature:(const CuVectorBase<BaseFloat> &data, const std::vector<int32> &indices, Vector<BaseFloat> *loglikes) const
+kaldi::CudaFGMM::NumGauss	backup/my-cuda-fgmm.h	/^		int32 NumGauss() const { return means_invcovars_.NumRows(); }$/;"	f	class:kaldi::CudaFGMM	access:public	signature:() const
+kaldi::CudaFGMM::NumGauss	my-cuda-fgmm.h	/^		int32 NumGauss() const { return means_invcovars_.NumRows(); }$/;"	f	class:kaldi::CudaFGMM	access:public	signature:() const
+kaldi::CudaFGMM::Read	backup/my-cuda-fgmm.h	/^		void Read(std::istream &is, bool binary);$/;"	p	class:kaldi::CudaFGMM	access:public	signature:(std::istream &is, bool binary)
+kaldi::CudaFGMM::Read	my-cuda-fgmm.h	/^		void Read(std::istream &is, bool binary);$/;"	p	class:kaldi::CudaFGMM	access:public	signature:(std::istream &is, bool binary)
+kaldi::CudaFGMM::ResizeInvCovars	backup/my-cuda-fgmm.h	/^		void ResizeInvCovars(int32 nmix, int32 dim);$/;"	p	class:kaldi::CudaFGMM	access:private	signature:(int32 nmix, int32 dim)
+kaldi::CudaFGMM::ResizeInvCovars	my-cuda-fgmm.h	/^		void ResizeInvCovars(int32 nmix, int32 dim);$/;"	p	class:kaldi::CudaFGMM	access:private	signature:(int32 nmix, int32 dim)
+kaldi::CudaFGMM::gconsts_	backup/my-cuda-fgmm.h	/^		CuVector<BaseFloat> gconsts_;$/;"	m	class:kaldi::CudaFGMM	access:private
+kaldi::CudaFGMM::gconsts_	my-cuda-fgmm.h	/^		CuVector<BaseFloat> gconsts_;$/;"	m	class:kaldi::CudaFGMM	access:private
+kaldi::CudaFGMM::inv_covars_	backup/my-cuda-fgmm.h	/^		std::vector<CuSpMatrix<BaseFloat> > inv_covars_;$/;"	m	class:kaldi::CudaFGMM	access:private
+kaldi::CudaFGMM::inv_covars_	my-cuda-fgmm.h	/^		std::vector<CuSpMatrix<BaseFloat> > inv_covars_;$/;"	m	class:kaldi::CudaFGMM	access:private
+kaldi::CudaFGMM::means_invcovars_	backup/my-cuda-fgmm.h	/^		CuMatrix<BaseFloat> means_invcovars_;$/;"	m	class:kaldi::CudaFGMM	access:private
+kaldi::CudaFGMM::means_invcovars_	my-cuda-fgmm.h	/^		CuMatrix<BaseFloat> means_invcovars_;$/;"	m	class:kaldi::CudaFGMM	access:private
+kaldi::CudaFGMM::weights_	backup/my-cuda-fgmm.h	/^		CuVector<BaseFloat> weights_;$/;"	m	class:kaldi::CudaFGMM	access:private
+kaldi::CudaFGMM::weights_	my-cuda-fgmm.h	/^		CuVector<BaseFloat> weights_;$/;"	m	class:kaldi::CudaFGMM	access:private
+kaldi::CudaFGMM::~CudaFGMM	backup/my-cuda-fgmm.h	/^		~CudaFGMM() {}$/;"	f	class:kaldi::CudaFGMM	access:public	signature:()
+kaldi::CudaFGMM::~CudaFGMM	my-cuda-fgmm.h	/^		~CudaFGMM() {}$/;"	f	class:kaldi::CudaFGMM	access:public	signature:()
+kaldi::CudaGMM	backup/my-cuda-gmm.h	/^class CudaGMM$/;"	c	namespace:kaldi
+kaldi::CudaGMM	my-cuda-gmm.h	/^class CudaGMM$/;"	c	namespace:kaldi
+kaldi::CudaGMM::CudaGMM	backup/my-cuda-gmm.h	/^		CudaGMM() {}$/;"	f	class:kaldi::CudaGMM	access:public	signature:()
+kaldi::CudaGMM::CudaGMM	my-cuda-gmm.h	/^		CudaGMM() {}$/;"	f	class:kaldi::CudaGMM	access:public	signature:()
+kaldi::CudaGMM::Dim	backup/my-cuda-gmm.h	/^		int32 Dim() const { return means_invvars_.NumCols(); }$/;"	f	class:kaldi::CudaGMM	access:public	signature:() const
+kaldi::CudaGMM::Dim	my-cuda-gmm.h	/^		int32 Dim() const { return means_invvars_.NumCols(); }$/;"	f	class:kaldi::CudaGMM	access:public	signature:() const
+kaldi::CudaGMM::GaussianSelection	backup/my-cuda-gmm.h	/^		void GaussianSelection(const CuMatrixBase<BaseFloat> &data,$/;"	p	class:kaldi::CudaGMM	access:public	signature:(const CuMatrixBase<BaseFloat> &data, int32 num_gselect, CuMatrixInt &output) const
+kaldi::CudaGMM::GaussianSelection	my-cuda-gmm.h	/^		void GaussianSelection(const CuMatrixBase<BaseFloat> &data,$/;"	p	class:kaldi::CudaGMM	access:public	signature:(const CuMatrixBase<BaseFloat> &data, int32 num_gselect, MatrixInt &output) const
+kaldi::CudaGMM::LoglikeLihoods	backup/my-cuda-gmm.h	/^		void LoglikeLihoods(const CuMatrixBase<BaseFloat> &data,$/;"	p	class:kaldi::CudaGMM	access:public	signature:(const CuMatrixBase<BaseFloat> &data, CuMatrix<BaseFloat> *loglikes) const
+kaldi::CudaGMM::LoglikeLihoods	my-cuda-gmm.h	/^		void LoglikeLihoods(const CuMatrixBase<BaseFloat> &data,$/;"	p	class:kaldi::CudaGMM	access:public	signature:(const CuMatrixBase<BaseFloat> &data, CuMatrix<BaseFloat> *loglikes) const
+kaldi::CudaGMM::NumGauss	backup/my-cuda-gmm.h	/^		int32 NumGauss() const { return weights_.Dim(); }$/;"	f	class:kaldi::CudaGMM	access:public	signature:() const
+kaldi::CudaGMM::NumGauss	my-cuda-gmm.h	/^		int32 NumGauss() const { return weights_.Dim(); }$/;"	f	class:kaldi::CudaGMM	access:public	signature:() const
+kaldi::CudaGMM::Read	backup/my-cuda-gmm.h	/^		void Read(std::istream &is, bool binary);$/;"	p	class:kaldi::CudaGMM	access:public	signature:(std::istream &is, bool binary)
+kaldi::CudaGMM::Read	my-cuda-gmm.h	/^		void Read(std::istream &is, bool binary);$/;"	p	class:kaldi::CudaGMM	access:public	signature:(std::istream &is, bool binary)
+kaldi::CudaGMM::gconsts_	backup/my-cuda-gmm.h	/^		CuVector<BaseFloat> gconsts_;$/;"	m	class:kaldi::CudaGMM	access:private
+kaldi::CudaGMM::gconsts_	my-cuda-gmm.h	/^		CuVector<BaseFloat> gconsts_;$/;"	m	class:kaldi::CudaGMM	access:private
+kaldi::CudaGMM::inv_vars_	backup/my-cuda-gmm.h	/^		CuMatrix<BaseFloat> inv_vars_;$/;"	m	class:kaldi::CudaGMM	access:private
+kaldi::CudaGMM::inv_vars_	my-cuda-gmm.h	/^		CuMatrix<BaseFloat> inv_vars_;$/;"	m	class:kaldi::CudaGMM	access:private
+kaldi::CudaGMM::means_invvars_	backup/my-cuda-gmm.h	/^		CuMatrix<BaseFloat> means_invvars_;$/;"	m	class:kaldi::CudaGMM	access:private
+kaldi::CudaGMM::means_invvars_	my-cuda-gmm.h	/^		CuMatrix<BaseFloat> means_invvars_;$/;"	m	class:kaldi::CudaGMM	access:private
+kaldi::CudaGMM::weights_	backup/my-cuda-gmm.h	/^		CuVector<BaseFloat> weights_;$/;"	m	class:kaldi::CudaGMM	access:private
+kaldi::CudaGMM::weights_	my-cuda-gmm.h	/^		CuVector<BaseFloat> weights_;$/;"	m	class:kaldi::CudaGMM	access:private
+kaldi::CudaGMM::~CudaGMM	backup/my-cuda-gmm.h	/^		~CudaGMM() {}$/;"	f	class:kaldi::CudaGMM	access:public	signature:()
+kaldi::CudaGMM::~CudaGMM	my-cuda-gmm.h	/^		~CudaGMM() {}$/;"	f	class:kaldi::CudaGMM	access:public	signature:()
+kaldi::CudaIE	backup/my-cuda-ie.h	/^class CudaIE$/;"	c	namespace:kaldi
+kaldi::CudaIE	my-cuda-ie.h	/^class CudaIE$/;"	c	namespace:kaldi
+kaldi::CudaIE::CudaIE	backup/my-cuda-ie.h	/^		CudaIE(): prior_offset_(0.0) {}$/;"	f	class:kaldi::CudaIE	access:public	signature:()
+kaldi::CudaIE::CudaIE	my-cuda-ie.h	/^		CudaIE(): prior_offset_(0.0) {}$/;"	f	class:kaldi::CudaIE	access:public	signature:()
+kaldi::CudaIE::FeatDim	backup/my-cuda-ie.cc	/^int32 CudaIE::FeatDim() const$/;"	f	class:kaldi::CudaIE	signature:() const
+kaldi::CudaIE::FeatDim	backup/my-cuda-ie.h	/^		int32 FeatDim() const;$/;"	p	class:kaldi::CudaIE	access:public	signature:() const
+kaldi::CudaIE::FeatDim	my-cuda-ie.cc	/^int32 CudaIE::FeatDim() const$/;"	f	class:kaldi::CudaIE	signature:() const
+kaldi::CudaIE::FeatDim	my-cuda-ie.h	/^		int32 FeatDim() const;$/;"	p	class:kaldi::CudaIE	access:public	signature:() const
+kaldi::CudaIE::GetIvectorDistMean	backup/my-cuda-ie.cc	/^void CudaIE::GetIvectorDistMean(const CudaIEStats &utt_stats,$/;"	f	class:kaldi::CudaIE	signature:(const CudaIEStats &utt_stats, CuVectorBase<double> *linear, CuSpMatrix<double> *quadratic) const
+kaldi::CudaIE::GetIvectorDistMean	backup/my-cuda-ie.h	/^		void GetIvectorDistMean(const CudaIEStats &utt_stats,$/;"	p	class:kaldi::CudaIE	access:public	signature:(const CudaIEStats &utt_stats, CuVectorBase<double> *linear, CuSpMatrix<double> *quadratic) const
+kaldi::CudaIE::GetIvectorDistMean	my-cuda-ie.cc	/^void CudaIE::GetIvectorDistMean(const CudaIEStats &utt_stats,$/;"	f	class:kaldi::CudaIE	signature:(const CudaIEStats &utt_stats, CuVectorBase<double> *linear, CuSpMatrix<double> *quadratic) const
+kaldi::CudaIE::GetIvectorDistMean	my-cuda-ie.h	/^		void GetIvectorDistMean(const CudaIEStats &utt_stats,$/;"	p	class:kaldi::CudaIE	access:public	signature:(const CudaIEStats &utt_stats, CuVectorBase<double> *linear, CuSpMatrix<double> *quadratic) const
+kaldi::CudaIE::GetIvectorDistPrior	backup/my-cuda-ie.cc	/^void CudaIE::GetIvectorDistPrior(const CudaIEStats &utt_stats,$/;"	f	class:kaldi::CudaIE	signature:(const CudaIEStats &utt_stats, CuVectorBase<double> *linear, CuSpMatrix<double> *quadratic) const
+kaldi::CudaIE::GetIvectorDistPrior	backup/my-cuda-ie.h	/^		void GetIvectorDistPrior(const CudaIEStats &utt_stats,$/;"	p	class:kaldi::CudaIE	access:public	signature:(const CudaIEStats &utt_stats, CuVectorBase<double> *linear, CuSpMatrix<double> *quadratic) const
+kaldi::CudaIE::GetIvectorDistPrior	my-cuda-ie.cc	/^void CudaIE::GetIvectorDistPrior(const CudaIEStats &utt_stats,$/;"	f	class:kaldi::CudaIE	signature:(const CudaIEStats &utt_stats, CuVectorBase<double> *linear, CuSpMatrix<double> *quadratic) const
+kaldi::CudaIE::GetIvectorDistPrior	my-cuda-ie.h	/^		void GetIvectorDistPrior(const CudaIEStats &utt_stats,$/;"	p	class:kaldi::CudaIE	access:public	signature:(const CudaIEStats &utt_stats, CuVectorBase<double> *linear, CuSpMatrix<double> *quadratic) const
+kaldi::CudaIE::GetIvectorDistribution	backup/my-cuda-ie.cc	/^void CudaIE::GetIvectorDistribution(const CudaIEStats &utt_stats,$/;"	f	class:kaldi::CudaIE	signature:(const CudaIEStats &utt_stats, CuVectorBase<double> *mean) const
+kaldi::CudaIE::GetIvectorDistribution	backup/my-cuda-ie.h	/^		void GetIvectorDistribution(const CudaIEStats &utt_stats,$/;"	p	class:kaldi::CudaIE	access:public	signature:(const CudaIEStats &utt_stats, CuVectorBase<double> *mean) const
+kaldi::CudaIE::GetIvectorDistribution	my-cuda-ie.cc	/^void CudaIE::GetIvectorDistribution(const CudaIEStats &utt_stats,$/;"	f	class:kaldi::CudaIE	signature:(const CudaIEStats &utt_stats, CuVectorBase<double> *mean) const
+kaldi::CudaIE::GetIvectorDistribution	my-cuda-ie.h	/^		void GetIvectorDistribution(const CudaIEStats &utt_stats,$/;"	p	class:kaldi::CudaIE	access:public	signature:(const CudaIEStats &utt_stats, CuVectorBase<double> *mean) const
+kaldi::CudaIE::IvectorDim	backup/my-cuda-ie.cc	/^int32 CudaIE::IvectorDim() const$/;"	f	class:kaldi::CudaIE	signature:() const
+kaldi::CudaIE::IvectorDim	backup/my-cuda-ie.h	/^		int32 IvectorDim() const;$/;"	p	class:kaldi::CudaIE	access:public	signature:() const
+kaldi::CudaIE::IvectorDim	my-cuda-ie.cc	/^int32 CudaIE::IvectorDim() const$/;"	f	class:kaldi::CudaIE	signature:() const
+kaldi::CudaIE::IvectorDim	my-cuda-ie.h	/^		int32 IvectorDim() const;$/;"	p	class:kaldi::CudaIE	access:public	signature:() const
+kaldi::CudaIE::M_	backup/my-cuda-ie.h	/^		std::vector<CuMatrix<double> > M_;$/;"	m	class:kaldi::CudaIE	access:private
+kaldi::CudaIE::M_	my-cuda-ie.h	/^		std::vector<CuMatrix<double> > M_;$/;"	m	class:kaldi::CudaIE	access:private
+kaldi::CudaIE::NumGauss	backup/my-cuda-ie.cc	/^int32 CudaIE::NumGauss() const$/;"	f	class:kaldi::CudaIE	signature:() const
+kaldi::CudaIE::NumGauss	backup/my-cuda-ie.h	/^		int32 NumGauss() const;$/;"	p	class:kaldi::CudaIE	access:public	signature:() const
+kaldi::CudaIE::NumGauss	my-cuda-ie.cc	/^int32 CudaIE::NumGauss() const$/;"	f	class:kaldi::CudaIE	signature:() const
+kaldi::CudaIE::NumGauss	my-cuda-ie.h	/^		int32 NumGauss() const;$/;"	p	class:kaldi::CudaIE	access:public	signature:() const
+kaldi::CudaIE::PriorOffset	backup/my-cuda-ie.h	/^		inline double PriorOffset() const { return prior_offset_; }$/;"	f	class:kaldi::CudaIE	access:public	signature:() const
+kaldi::CudaIE::PriorOffset	my-cuda-ie.h	/^		inline double PriorOffset() const { return prior_offset_; }$/;"	f	class:kaldi::CudaIE	access:public	signature:() const
+kaldi::CudaIE::Read	backup/my-cuda-ie.cc	/^void CudaIE::Read(std::istream &is, bool binary)$/;"	f	class:kaldi::CudaIE	signature:(std::istream &is, bool binary)
+kaldi::CudaIE::Read	backup/my-cuda-ie.h	/^		void Read(std::istream &is, bool binary);$/;"	p	class:kaldi::CudaIE	access:public	signature:(std::istream &is, bool binary)
+kaldi::CudaIE::Read	my-cuda-ie.cc	/^void CudaIE::Read(std::istream &is, bool binary)$/;"	f	class:kaldi::CudaIE	signature:(std::istream &is, bool binary)
+kaldi::CudaIE::Read	my-cuda-ie.h	/^		void Read(std::istream &is, bool binary);$/;"	p	class:kaldi::CudaIE	access:public	signature:(std::istream &is, bool binary)
+kaldi::CudaIE::Sigma_inv_	backup/my-cuda-ie.h	/^		std::vector<CuSpMatrix<double> > Sigma_inv_;$/;"	m	class:kaldi::CudaIE	access:private
+kaldi::CudaIE::Sigma_inv_	my-cuda-ie.h	/^		std::vector<CuSpMatrix<double> > Sigma_inv_;$/;"	m	class:kaldi::CudaIE	access:private
+kaldi::CudaIE::Sigma_inv_M_	backup/my-cuda-ie.h	/^		std::vector<CuMatrix<double> > Sigma_inv_M_;$/;"	m	class:kaldi::CudaIE	access:private
+kaldi::CudaIE::Sigma_inv_M_	my-cuda-ie.h	/^		std::vector<CuMatrix<double> > Sigma_inv_M_;$/;"	m	class:kaldi::CudaIE	access:private
+kaldi::CudaIE::U_	backup/my-cuda-ie.h	/^		CuMatrix<double> U_;$/;"	m	class:kaldi::CudaIE	access:private
+kaldi::CudaIE::U_	my-cuda-ie.h	/^		CuMatrix<double> U_;$/;"	m	class:kaldi::CudaIE	access:private
+kaldi::CudaIE::gconsts_	backup/my-cuda-ie.h	/^		CuVector<double> gconsts_;$/;"	m	class:kaldi::CudaIE	access:private
+kaldi::CudaIE::gconsts_	my-cuda-ie.h	/^		CuVector<double> gconsts_;$/;"	m	class:kaldi::CudaIE	access:private
+kaldi::CudaIE::prior_offset_	backup/my-cuda-ie.h	/^		double prior_offset_;$/;"	m	class:kaldi::CudaIE	access:private
+kaldi::CudaIE::prior_offset_	my-cuda-ie.h	/^		double prior_offset_;$/;"	m	class:kaldi::CudaIE	access:private
+kaldi::CudaIE::w_	backup/my-cuda-ie.h	/^		CuMatrix<double> w_;$/;"	m	class:kaldi::CudaIE	access:private
+kaldi::CudaIE::w_	my-cuda-ie.h	/^		CuMatrix<double> w_;$/;"	m	class:kaldi::CudaIE	access:private
+kaldi::CudaIE::w_vec_	backup/my-cuda-ie.h	/^		CuVector<double> w_vec_;$/;"	m	class:kaldi::CudaIE	access:private
+kaldi::CudaIE::w_vec_	my-cuda-ie.h	/^		CuVector<double> w_vec_;$/;"	m	class:kaldi::CudaIE	access:private
+kaldi::CudaIE::~CudaIE	backup/my-cuda-ie.h	/^		~CudaIE() {}$/;"	f	class:kaldi::CudaIE	access:public	signature:()
+kaldi::CudaIE::~CudaIE	my-cuda-ie.h	/^		~CudaIE() {}$/;"	f	class:kaldi::CudaIE	access:public	signature:()
+kaldi::CudaIEStats	backup/my-cuda-ie.h	/^class CudaIEStats$/;"	c	namespace:kaldi
+kaldi::CudaIEStats	my-cuda-ie.h	/^class CudaIEStats$/;"	c	namespace:kaldi
+kaldi::CudaIEStats::AccStats	backup/my-cuda-ie.cc	/^void CudaIEStats::AccStats(const MatrixBase<BaseFloat> &feats, const Posterior &post)$/;"	f	class:kaldi::CudaIEStats	signature:(const MatrixBase<BaseFloat> &feats, const Posterior &post)
+kaldi::CudaIEStats::AccStats	backup/my-cuda-ie.h	/^		void AccStats(const MatrixBase<BaseFloat> &feats, const Posterior &post);$/;"	p	class:kaldi::CudaIEStats	access:public	signature:(const MatrixBase<BaseFloat> &feats, const Posterior &post)
+kaldi::CudaIEStats::AccStats	my-cuda-ie.cc	/^void CudaIEStats::AccStats(const MatrixBase<BaseFloat> &feats, const Posterior &post)$/;"	f	class:kaldi::CudaIEStats	signature:(const MatrixBase<BaseFloat> &feats, const Posterior &post)
+kaldi::CudaIEStats::AccStats	my-cuda-ie.h	/^		void AccStats(const MatrixBase<BaseFloat> &feats, const Posterior &post);$/;"	p	class:kaldi::CudaIEStats	access:public	signature:(const MatrixBase<BaseFloat> &feats, const Posterior &post)
+kaldi::CudaIEStats::CudaIEStats	backup/my-cuda-ie.h	/^		CudaIEStats() {}$/;"	f	class:kaldi::CudaIEStats	access:public	signature:()
+kaldi::CudaIEStats::CudaIEStats	my-cuda-ie.h	/^		CudaIEStats() {}$/;"	f	class:kaldi::CudaIEStats	access:public	signature:()
+kaldi::CudaIEStats::Resize	backup/my-cuda-ie.cc	/^void CudaIEStats::Resize(int32 num_gauss, int32 feat_dim)$/;"	f	class:kaldi::CudaIEStats	signature:(int32 num_gauss, int32 feat_dim)
+kaldi::CudaIEStats::Resize	backup/my-cuda-ie.h	/^		void Resize(int32 num_gauss, int32 feat_dim);$/;"	p	class:kaldi::CudaIEStats	access:public	signature:(int32 num_gauss, int32 feat_dim)
+kaldi::CudaIEStats::Resize	my-cuda-ie.cc	/^void CudaIEStats::Resize(int32 num_gauss, int32 feat_dim)$/;"	f	class:kaldi::CudaIEStats	signature:(int32 num_gauss, int32 feat_dim)
+kaldi::CudaIEStats::Resize	my-cuda-ie.h	/^		void Resize(int32 num_gauss, int32 feat_dim);$/;"	p	class:kaldi::CudaIEStats	access:public	signature:(int32 num_gauss, int32 feat_dim)
+kaldi::CudaIEStats::Scale	backup/my-cuda-ie.h	/^		void Scale(double scale);$/;"	p	class:kaldi::CudaIEStats	access:public	signature:(double scale)
+kaldi::CudaIEStats::Scale	my-cuda-ie.h	/^		void Scale(double scale);$/;"	p	class:kaldi::CudaIEStats	access:public	signature:(double scale)
+kaldi::CudaIEStats::X_	backup/my-cuda-ie.h	/^		CuMatrix<double> X_;$/;"	m	class:kaldi::CudaIEStats	access:private
+kaldi::CudaIEStats::X_	my-cuda-ie.h	/^		CuMatrix<double> X_;$/;"	m	class:kaldi::CudaIEStats	access:private
+kaldi::CudaIEStats::gamma_	backup/my-cuda-ie.h	/^		CuVector<double> gamma_;$/;"	m	class:kaldi::CudaIEStats	access:private
+kaldi::CudaIEStats::gamma_	my-cuda-ie.h	/^		CuVector<double> gamma_;$/;"	m	class:kaldi::CudaIEStats	access:private
+kaldi::CudaIEStats::~CudaIEStats	backup/my-cuda-ie.h	/^		~CudaIEStats() {}$/;"	f	class:kaldi::CudaIEStats	access:public	signature:()
+kaldi::CudaIEStats::~CudaIEStats	my-cuda-ie.h	/^		~CudaIEStats() {}$/;"	f	class:kaldi::CudaIEStats	access:public	signature:()
+kaldi::CudaInitUBM	backup/my-cuda-init.h	/^class CudaInitUBM$/;"	c	namespace:kaldi
+kaldi::CudaInitUBM	my-cuda-init.h	/^class CudaInitUBM$/;"	c	namespace:kaldi
+kaldi::CudaInitUBM::CudaInitReadFile	backup/my-cuda-init.h	/^		bool CudaInitReadFile(std::string final_ubm, std::string final_ie, std::string gmm_ubm, int gpuid);$/;"	p	class:kaldi::CudaInitUBM	access:public	signature:(std::string final_ubm, std::string final_ie, std::string gmm_ubm, int gpuid)
+kaldi::CudaInitUBM::CudaInitReadFile	my-cuda-init.h	/^		bool CudaInitReadFile(std::string final_ubm, std::string final_ie, std::string gmm_ubm, int gpuid);$/;"	p	class:kaldi::CudaInitUBM	access:public	signature:(std::string final_ubm, std::string final_ie, std::string gmm_ubm, int gpuid)
+kaldi::CudaInitUBM::CudaInitUBM	backup/my-cuda-init.h	/^		CudaInitUBM() {}$/;"	f	class:kaldi::CudaInitUBM	access:public	signature:()
+kaldi::CudaInitUBM::CudaInitUBM	my-cuda-init.h	/^		CudaInitUBM() : gpuid_(-1) {}$/;"	f	class:kaldi::CudaInitUBM	access:public	signature:()
+kaldi::CudaInitUBM::fgmm_	backup/my-cuda-init.h	/^		FullGmm fgmm_;$/;"	m	class:kaldi::CudaInitUBM	access:public
+kaldi::CudaInitUBM::fgmm_	my-cuda-init.h	/^		FullGmm fgmm_;$/;"	m	class:kaldi::CudaInitUBM	access:public
+kaldi::CudaInitUBM::getGpuID	my-cuda-init.h	/^		int getGpuID();$/;"	p	class:kaldi::CudaInitUBM	access:public	signature:()
+kaldi::CudaInitUBM::gmm_	backup/my-cuda-init.h	/^		CudaGMM gmm_;$/;"	m	class:kaldi::CudaInitUBM	access:public
+kaldi::CudaInitUBM::gmm_	my-cuda-init.h	/^		CudaGMM gmm_;$/;"	m	class:kaldi::CudaInitUBM	access:public
+kaldi::CudaInitUBM::gpuid_	my-cuda-init.h	/^		int gpuid_;$/;"	m	class:kaldi::CudaInitUBM	access:public
+kaldi::CudaInitUBM::ie_	backup/my-cuda-init.h	/^		CudaIE ie_;$/;"	m	class:kaldi::CudaInitUBM	access:public
+kaldi::CudaInitUBM::ie_	my-cuda-init.h	/^		CudaIE ie_;$/;"	m	class:kaldi::CudaInitUBM	access:public
+kaldi::CudaInitUBM::~CudaInitUBM	backup/my-cuda-init.h	/^		~CudaInitUBM() {}$/;"	f	class:kaldi::CudaInitUBM	access:public	signature:()
+kaldi::CudaInitUBM::~CudaInitUBM	my-cuda-init.h	/^		~CudaInitUBM() {}$/;"	f	class:kaldi::CudaInitUBM	access:public	signature:()
+kaldi::CudaSRE	backup/my-cuda-sre.h	/^class CudaSRE: public SRE<DataType>$/;"	c	namespace:kaldi	inherits:SRE
+kaldi::CudaSRE	my-cuda-sre.h	/^class CudaSRE: public SRE<DataType>$/;"	c	namespace:kaldi	inherits:SRE
+kaldi::CudaSRE::CudaSRE	backup/my-cuda-sre.h	/^		CudaSRE(): SRE<DataType>() {}$/;"	f	class:kaldi::CudaSRE	access:public	signature:()
+kaldi::CudaSRE::CudaSRE	my-cuda-sre.h	/^		CudaSRE(): SRE<DataType>() {}$/;"	f	class:kaldi::CudaSRE	access:public	signature:()
+kaldi::CudaSRE::NumFrames	backup/my-cuda-sre.h	/^		int32 NumFrames() const { return cu_feature_.NumRows(); }$/;"	f	class:kaldi::CudaSRE	access:public	signature:() const
+kaldi::CudaSRE::NumFrames	my-cuda-sre.h	/^		int32 NumFrames() const { return cu_feature_.NumRows(); }$/;"	f	class:kaldi::CudaSRE	access:public	signature:() const
+kaldi::CudaSRE::cu_feature_	backup/my-cuda-sre.h	/^		CuMatrix<BaseFloat> cu_feature_;$/;"	m	class:kaldi::CudaSRE	access:private
+kaldi::CudaSRE::cu_feature_	my-cuda-sre.h	/^		CuMatrix<BaseFloat> cu_feature_;$/;"	m	class:kaldi::CudaSRE	access:private
+kaldi::CudaSRE::cu_gselect_	backup/my-cuda-sre.h	/^		CuMatrixInt cu_gselect_;$/;"	m	class:kaldi::CudaSRE	access:private
+kaldi::CudaSRE::cu_gselect_	my-cuda-sre.h	/^		MatrixInt cu_gselect_;$/;"	m	class:kaldi::CudaSRE	access:private
+kaldi::CudaSRE::cu_post_	backup/my-cuda-sre.h	/^		Posterior cu_post_;$/;"	m	class:kaldi::CudaSRE	access:private
+kaldi::CudaSRE::cu_post_	my-cuda-sre.h	/^		Posterior cu_post_;$/;"	m	class:kaldi::CudaSRE	access:private
+kaldi::CudaSRE::cu_stats_	backup/my-cuda-sre.h	/^		CudaIEStats cu_stats_;$/;"	m	class:kaldi::CudaSRE	access:private
+kaldi::CudaSRE::cu_stats_	my-cuda-sre.h	/^		CudaIEStats cu_stats_;$/;"	m	class:kaldi::CudaSRE	access:private
+kaldi::CudaSRE::cuda_compute_ivector	backup/my-cuda-sre.h	/^		bool cuda_compute_ivector(CudaIE &ie);$/;"	p	class:kaldi::CudaSRE	access:public	signature:(CudaIE &ie)
+kaldi::CudaSRE::cuda_compute_ivector	my-cuda-sre.cc	/^bool CudaSRE<DataType>::cuda_compute_ivector(CudaIE &ie)$/;"	f	class:kaldi::CudaSRE	signature:(CudaIE &ie)
+kaldi::CudaSRE::cuda_compute_ivector	my-cuda-sre.h	/^		bool cuda_compute_ivector(CudaIE &ie);$/;"	p	class:kaldi::CudaSRE	access:public	signature:(CudaIE &ie)
+kaldi::CudaSRE::cuda_compute_mfcc	backup/my-cuda-sre.h	/^		bool cuda_compute_mfcc();$/;"	p	class:kaldi::CudaSRE	access:public	signature:()
+kaldi::CudaSRE::cuda_compute_mfcc	my-cuda-sre.cc	/^bool CudaSRE<DataType>::cuda_compute_mfcc()$/;"	f	class:kaldi::CudaSRE	signature:()
+kaldi::CudaSRE::cuda_compute_mfcc	my-cuda-sre.h	/^		bool cuda_compute_mfcc();$/;"	p	class:kaldi::CudaSRE	access:public	signature:()
+kaldi::CudaSRE::cuda_compute_posterior	backup/my-cuda-sre.h	/^		bool cuda_compute_posterior(FullGmm &fgmm_);$/;"	p	class:kaldi::CudaSRE	access:public	signature:(FullGmm &fgmm_)
+kaldi::CudaSRE::cuda_compute_posterior	my-cuda-sre.cc	/^bool CudaSRE<DataType>::cuda_compute_posterior(FullGmm &fgmm_)$/;"	f	class:kaldi::CudaSRE	signature:(FullGmm &fgmm_)
+kaldi::CudaSRE::cuda_compute_posterior	my-cuda-sre.h	/^		bool cuda_compute_posterior(FullGmm &fgmm_);$/;"	p	class:kaldi::CudaSRE	access:public	signature:(FullGmm &fgmm_)
+kaldi::CudaSRE::get_cuda_feature	backup/my-cuda-sre.h	/^		CuMatrix<BaseFloat> get_cuda_feature();$/;"	p	class:kaldi::CudaSRE	access:public	signature:()
+kaldi::CudaSRE::get_cuda_feature	my-cuda-sre.cc	/^CuMatrix<BaseFloat> CudaSRE<DataType>::get_cuda_feature()$/;"	f	class:kaldi::CudaSRE	signature:()
+kaldi::CudaSRE::get_cuda_feature	my-cuda-sre.h	/^		CuMatrix<BaseFloat> get_cuda_feature();$/;"	p	class:kaldi::CudaSRE	access:public	signature:()
+kaldi::CudaSRE::get_ivector	backup/my-cuda-sre.h	/^		Vector<double> get_ivector();$/;"	p	class:kaldi::CudaSRE	access:public	signature:()
+kaldi::CudaSRE::get_ivector	my-cuda-sre.cc	/^Vector<double> CudaSRE<DataType>::get_ivector()$/;"	f	class:kaldi::CudaSRE	signature:()
+kaldi::CudaSRE::get_ivector	my-cuda-sre.h	/^		Vector<double> get_ivector();$/;"	p	class:kaldi::CudaSRE	access:public	signature:()
+kaldi::CudaSRE::gmm_select	backup/my-cuda-sre.h	/^		bool gmm_select(CudaGMM &cu_gmm_);$/;"	p	class:kaldi::CudaSRE	access:public	signature:(CudaGMM &cu_gmm_)
+kaldi::CudaSRE::gmm_select	my-cuda-sre.cc	/^bool CudaSRE<DataType>::gmm_select(CudaGMM &cu_gmm_)$/;"	f	class:kaldi::CudaSRE	signature:(CudaGMM &cu_gmm_)
+kaldi::CudaSRE::gmm_select	my-cuda-sre.h	/^		bool gmm_select(CudaGMM &cu_gmm_);$/;"	p	class:kaldi::CudaSRE	access:public	signature:(CudaGMM &cu_gmm_)
+kaldi::CudaSRE::ivector_	backup/my-cuda-sre.h	/^		CuVector<double> ivector_;$/;"	m	class:kaldi::CudaSRE	access:private
+kaldi::CudaSRE::ivector_	my-cuda-sre.h	/^		CuVector<double> ivector_;$/;"	m	class:kaldi::CudaSRE	access:private
+kaldi::CudaSRE::ivector_result_	backup/my-cuda-sre.h	/^		Vector<double> ivector_result_;$/;"	m	class:kaldi::CudaSRE	access:private
+kaldi::CudaSRE::ivector_result_	my-cuda-sre.h	/^		Vector<double> ivector_result_;$/;"	m	class:kaldi::CudaSRE	access:private
+kaldi::CudaSRE::opts	backup/my-cuda-sre.h	/^		my_option opts;$/;"	m	class:kaldi::CudaSRE	access:private
+kaldi::CudaSRE::opts	my-cuda-sre.h	/^		my_option opts;$/;"	m	class:kaldi::CudaSRE	access:private
+kaldi::CudaSRE::setVoiceFileName	backup/my-cuda-sre.h	/^		bool setVoiceFileName(std::string filename);$/;"	p	class:kaldi::CudaSRE	access:public	signature:(std::string filename)
+kaldi::CudaSRE::setVoiceFileName	my-cuda-sre.cc	/^bool CudaSRE<DataType>::setVoiceFileName(std::string filename)$/;"	f	class:kaldi::CudaSRE	signature:(std::string filename)
+kaldi::CudaSRE::setVoiceFileName	my-cuda-sre.h	/^		bool setVoiceFileName(std::string filename);$/;"	p	class:kaldi::CudaSRE	access:public	signature:(std::string filename)
+kaldi::CudaSRE::~CudaSRE	backup/my-cuda-sre.h	/^		~CudaSRE() {}$/;"	f	class:kaldi::CudaSRE	access:public	signature:()
+kaldi::CudaSRE::~CudaSRE	my-cuda-sre.h	/^		~CudaSRE()$/;"	f	class:kaldi::CudaSRE	access:public	signature:()
+kaldi::SRECompute	backup/my-cuda-compute.h	/^class SRECompute$/;"	c	namespace:kaldi
+kaldi::SRECompute	my-cuda-compute.h	/^class SRECompute$/;"	c	namespace:kaldi
+kaldi::SRECompute::SRECompute	backup/my-cuda-compute.h	/^		SRECompute() {}$/;"	f	class:kaldi::SRECompute	access:public	signature:()
+kaldi::SRECompute::SRECompute	my-cuda-compute.h	/^		SRECompute() {}$/;"	f	class:kaldi::SRECompute	access:public	signature:()
+kaldi::SRECompute::cuda_sre_compute	backup/my-cuda-compute.h	/^		bool cuda_sre_compute(CudaInitUBM *ubm, std::string voice_file, std::string ivector_path, int valid_frames);$/;"	p	class:kaldi::SRECompute	access:public	signature:(CudaInitUBM *ubm, std::string voice_file, std::string ivector_path, int valid_frames)
+kaldi::SRECompute::cuda_sre_compute	my-cuda-compute.h	/^		bool cuda_sre_compute(CudaInitUBM *ubm, std::string voice_file, std::string ivector_path, int valid_frames);$/;"	p	class:kaldi::SRECompute	access:public	signature:(CudaInitUBM *ubm, std::string voice_file, std::string ivector_path, int valid_frames)
+kaldi::SRECompute::~SRECompute	backup/my-cuda-compute.h	/^		~SRECompute() {}$/;"	f	class:kaldi::SRECompute	access:public	signature:()
+kaldi::SRECompute::~SRECompute	my-cuda-compute.h	/^		~SRECompute() {}$/;"	f	class:kaldi::SRECompute	access:public	signature:()
+kaldi::greater_pair	backup/cu-device.cc	/^bool greater_pair(const std::pair<TA, TB> &left, const std::pair<TA, TB>& right) {$/;"	f	namespace:kaldi	signature:(const std::pair<TA, TB> &left, const std::pair<TA, TB>& right)
+lowFreq	backup/conf.h	7;"	d
+lowFreq	conf.h	7;"	d
+low_freq	OptionStruct.h	/^	BaseFloat low_freq;$/;"	m	struct:CudaMelBanksOptions	access:public
+low_freq	backup/OptionStruct.h	/^	BaseFloat low_freq;$/;"	m	struct:CudaMelBanksOptions	access:public
+means_invcovars_	backup/my-cuda-fgmm.h	/^		CuMatrix<BaseFloat> means_invcovars_;$/;"	m	class:kaldi::CudaFGMM	access:private
+means_invcovars_	my-cuda-fgmm.h	/^		CuMatrix<BaseFloat> means_invcovars_;$/;"	m	class:kaldi::CudaFGMM	access:private
+means_invvars_	backup/my-cuda-gmm.h	/^		CuMatrix<BaseFloat> means_invvars_;$/;"	m	class:kaldi::CudaGMM	access:private
+means_invvars_	my-cuda-gmm.h	/^		CuMatrix<BaseFloat> means_invvars_;$/;"	m	class:kaldi::CudaGMM	access:private
+mfcc_opts	backup/my-option.h	/^	MfccOptions mfcc_opts;$/;"	m	struct:my_option	access:public
+mfcc_opts	my-option.h	/^	MfccOptions mfcc_opts;$/;"	m	struct:my_option	access:public
+minPosterior	backup/conf.h	16;"	d
+minPosterior	conf.h	16;"	d
+min_window	OptionStruct.h	/^	int32 min_window;$/;"	m	struct:CudaSlidingWindowCmnOptions	access:public
+min_window	backup/OptionStruct.h	/^	int32 min_window;$/;"	m	struct:CudaSlidingWindowCmnOptions	access:public
+my_cuda_compute_fft	backup/my-cuda-function-kernel.h	/^inline void my_cuda_compute_fft(double *data, int32_cuda dim) { _D_my_cuda_compute_fft(data, dim); }$/;"	f	signature:(double *data, int32_cuda dim)
+my_cuda_compute_fft	backup/my-cuda-function-kernel.h	/^inline void my_cuda_compute_fft(float *data, int32_cuda dim) { _F_my_cuda_compute_fft(data, dim); }$/;"	f	signature:(float *data, int32_cuda dim)
+my_cuda_compute_fft	my-cuda-function-kernel.h	/^inline void my_cuda_compute_fft(double *data, int32_cuda dim) { _D_my_cuda_compute_fft(data, dim); }$/;"	f	signature:(double *data, int32_cuda dim)
+my_cuda_compute_fft	my-cuda-function-kernel.h	/^inline void my_cuda_compute_fft(float *data, int32_cuda dim) { _F_my_cuda_compute_fft(data, dim); }$/;"	f	signature:(float *data, int32_cuda dim)
+my_cuda_gmm_select	backup/my-cuda-function-kernel.h	/^inline void my_cuda_gmm_select(CuMatrixBase<Real> &loglikesmat, CuMatrixInt &gmm_out, int32_cuda num_gselect)$/;"	f	signature:(CuMatrixBase<Real> &loglikesmat, CuMatrixInt &gmm_out, int32_cuda num_gselect)
+my_cuda_gmm_select	my-cuda-function-kernel.h	/^inline void my_cuda_gmm_select(CuMatrixBase<Real> &loglikesmat, MatrixInt &gmm_out, int32_cuda num_gselect)$/;"	f	signature:(CuMatrixBase<Real> &loglikesmat, MatrixInt &gmm_out, int32_cuda num_gselect)
+my_option	backup/my-option.h	/^	my_option(): mfcc_opts(), vad_opts(), slid_opts(), delta_opts()$/;"	f	struct:my_option	access:public	signature:()
+my_option	backup/my-option.h	/^struct my_option$/;"	s
+my_option	my-option.h	/^	my_option(): mfcc_opts(), vad_opts(), slid_opts(), delta_opts()$/;"	f	struct:my_option	access:public	signature:()
+my_option	my-option.h	/^struct my_option$/;"	s
+my_option::delta_opts	backup/my-option.h	/^	DeltaFeaturesOptions delta_opts;$/;"	m	struct:my_option	access:public
+my_option::delta_opts	my-option.h	/^	DeltaFeaturesOptions delta_opts;$/;"	m	struct:my_option	access:public
+my_option::mfcc_opts	backup/my-option.h	/^	MfccOptions mfcc_opts;$/;"	m	struct:my_option	access:public
+my_option::mfcc_opts	my-option.h	/^	MfccOptions mfcc_opts;$/;"	m	struct:my_option	access:public
+my_option::my_option	backup/my-option.h	/^	my_option(): mfcc_opts(), vad_opts(), slid_opts(), delta_opts()$/;"	f	struct:my_option	access:public	signature:()
+my_option::my_option	my-option.h	/^	my_option(): mfcc_opts(), vad_opts(), slid_opts(), delta_opts()$/;"	f	struct:my_option	access:public	signature:()
+my_option::slid_opts	backup/my-option.h	/^	SlidingWindowCmnOptions slid_opts;$/;"	m	struct:my_option	access:public
+my_option::slid_opts	my-option.h	/^	SlidingWindowCmnOptions slid_opts;$/;"	m	struct:my_option	access:public
+my_option::vad_opts	backup/my-option.h	/^	VadEnergyOptions vad_opts;$/;"	m	struct:my_option	access:public
+my_option::vad_opts	my-option.h	/^	VadEnergyOptions vad_opts;$/;"	m	struct:my_option	access:public
+normVars	backup/conf.h	12;"	d
+normVars	conf.h	12;"	d
+normalize_variance	OptionStruct.h	/^	bool normalize_variance;$/;"	m	struct:CudaSlidingWindowCmnOptions	access:public
+normalize_variance	backup/OptionStruct.h	/^	bool normalize_variance;$/;"	m	struct:CudaSlidingWindowCmnOptions	access:public
+numBins	backup/conf.h	22;"	d
+numBins	conf.h	22;"	d
+numCeps	backup/conf.h	9;"	d
+numCeps	conf.h	9;"	d
+numGselect	backup/conf.h	15;"	d
+numGselect	conf.h	15;"	d
+num_bins	OptionStruct.h	/^	int32 num_bins;$/;"	m	struct:CudaMelBanksOptions	access:public
+num_bins	backup/OptionStruct.h	/^	int32 num_bins;$/;"	m	struct:CudaMelBanksOptions	access:public
+num_blocks	OptionStruct.h	/^		  num_blocks,$/;"	m	struct:CudaShiftedDeltaFeaturesOptions	access:public
+num_blocks	backup/OptionStruct.h	/^		  num_blocks,$/;"	m	struct:CudaShiftedDeltaFeaturesOptions	access:public
+operator ()	backup/my-cuda-data-struct.h	/^		inline int32_cuda operator() (int32_cuda row, int32_cuda col) const$/;"	f	class:CuMatrixInt	access:public	signature:(int32_cuda row, int32_cuda col) const
+operator ()	my-cuda-data-struct.h	/^		inline int32_cuda operator() (int32_cuda row, int32_cuda col) const$/;"	f	class:MatrixInt	access:public	signature:(int32_cuda row, int32_cuda col) const
+opts	backup/my-cuda-sre.h	/^		my_option opts;$/;"	m	class:kaldi::CudaSRE	access:private
+opts	my-cuda-sre.h	/^		my_option opts;$/;"	m	class:kaldi::CudaSRE	access:private
+order	OptionStruct.h	/^	int32 order;$/;"	m	struct:CudaDeltaFeatureOptions	access:public
+order	backup/OptionStruct.h	/^	int32 order;$/;"	m	struct:CudaDeltaFeatureOptions	access:public
+out_to_file	backup/my-cuda-tool.h	/^void out_to_file(T mat, std::string filename)$/;"	f	signature:(T mat, std::string filename)
+out_to_file	my-cuda-tool.h	/^void out_to_file(T mat, std::string filename)$/;"	f	signature:(T mat, std::string filename)
+out_vec_to_file	backup/my-cuda-tool.h	/^bool out_vec_to_file(T vec, std::string filename)$/;"	f	signature:(T vec, std::string filename)
+out_vec_to_file	my-cuda-tool.h	/^bool out_vec_to_file(T vec, std::string filename)$/;"	f	signature:(T vec, std::string filename)
+preemph_coeff	OptionStruct.h	/^	BaseFloat preemph_coeff;$/;"	m	struct:CudaFrameExtractionOptions	access:public
+preemph_coeff	backup/OptionStruct.h	/^	BaseFloat preemph_coeff;$/;"	m	struct:CudaFrameExtractionOptions	access:public
+printCuMatInt	backup/my-cuda-data-struct.h	/^inline void printCuMatInt(CuMatrixInt const mat)$/;"	f	signature:(CuMatrixInt const mat)
+printCuMatInt	my-cuda-data-struct.h	/^inline void printCuMatInt(MatrixInt const mat)$/;"	f	signature:(MatrixInt const mat)
+prior_offset_	backup/my-cuda-ie.h	/^		double prior_offset_;$/;"	m	class:kaldi::CudaIE	access:private
+prior_offset_	my-cuda-ie.h	/^		double prior_offset_;$/;"	m	class:kaldi::CudaIE	access:private
+remove_dc_offset	OptionStruct.h	/^	bool remove_dc_offset;$/;"	m	struct:CudaFrameExtractionOptions	access:public
+remove_dc_offset	backup/OptionStruct.h	/^	bool remove_dc_offset;$/;"	m	struct:CudaFrameExtractionOptions	access:public
+round_to_power_of_two	OptionStruct.h	/^	bool round_to_power_of_two;$/;"	m	struct:CudaFrameExtractionOptions	access:public
+round_to_power_of_two	backup/OptionStruct.h	/^	bool round_to_power_of_two;$/;"	m	struct:CudaFrameExtractionOptions	access:public
+rows_	backup/my-cuda-data-struct.h	/^		int32_cuda rows_;$/;"	m	class:CuMatrixInt	access:private
+rows_	my-cuda-data-struct.h	/^		int32_cuda rows_;$/;"	m	class:MatrixInt	access:private
+sampFreq	backup/conf.h	5;"	d
+sampFreq	conf.h	5;"	d
+samp_freq	OptionStruct.h	/^	BaseFloat samp_freq;$/;"	m	struct:CudaFrameExtractionOptions	access:public
+samp_freq	backup/OptionStruct.h	/^	BaseFloat samp_freq;$/;"	m	struct:CudaFrameExtractionOptions	access:public
+setVoiceFileName	backup/my-cuda-sre.cc	/^bool CudaSRE<DataType>::setVoiceFileName(std::string filename)$/;"	f	class:CudaSRE	signature:(std::string filename)
+setVoiceFileName	backup/my-cuda-sre.h	/^		bool setVoiceFileName(std::string filename);$/;"	p	class:kaldi::CudaSRE	access:public	signature:(std::string filename)
+setVoiceFileName	my-cuda-sre.cc	/^bool CudaSRE<DataType>::setVoiceFileName(std::string filename)$/;"	f	class:kaldi::CudaSRE	signature:(std::string filename)
+setVoiceFileName	my-cuda-sre.h	/^		bool setVoiceFileName(std::string filename);$/;"	p	class:kaldi::CudaSRE	access:public	signature:(std::string filename)
+slid_opts	backup/my-option.h	/^	SlidingWindowCmnOptions slid_opts;$/;"	m	struct:my_option	access:public
+slid_opts	my-option.h	/^	SlidingWindowCmnOptions slid_opts;$/;"	m	struct:my_option	access:public
+snip_edges	OptionStruct.h	/^	bool snip_edges;$/;"	m	struct:CudaFrameExtractionOptions	access:public
+snip_edges	backup/OptionStruct.h	/^	bool snip_edges;$/;"	m	struct:CudaFrameExtractionOptions	access:public
+vadEnergyMeanScale	backup/conf.h	11;"	d
+vadEnergyMeanScale	conf.h	11;"	d
+vadEnergyThreshold	backup/conf.h	10;"	d
+vadEnergyThreshold	conf.h	10;"	d
+vad_opts	backup/my-option.h	/^	VadEnergyOptions vad_opts;$/;"	m	struct:my_option	access:public
+vad_opts	my-option.h	/^	VadEnergyOptions vad_opts;$/;"	m	struct:my_option	access:public
+vtlnHigh	backup/conf.h	24;"	d
+vtlnHigh	conf.h	24;"	d
+vtlnLow	backup/conf.h	23;"	d
+vtlnLow	conf.h	23;"	d
+vtln_high	OptionStruct.h	/^	BaseFloat vtln_high;$/;"	m	struct:CudaMelBanksOptions	access:public
+vtln_high	backup/OptionStruct.h	/^	BaseFloat vtln_high;$/;"	m	struct:CudaMelBanksOptions	access:public
+vtln_low	OptionStruct.h	/^	BaseFloat vtln_low;$/;"	m	struct:CudaMelBanksOptions	access:public
+vtln_low	backup/OptionStruct.h	/^	BaseFloat vtln_low;$/;"	m	struct:CudaMelBanksOptions	access:public
+w_	backup/my-cuda-ie.h	/^		CuMatrix<double> w_;$/;"	m	class:kaldi::CudaIE	access:private
+w_	my-cuda-ie.h	/^		CuMatrix<double> w_;$/;"	m	class:kaldi::CudaIE	access:private
+w_vec_	backup/my-cuda-ie.h	/^		CuVector<double> w_vec_;$/;"	m	class:kaldi::CudaIE	access:private
+w_vec_	my-cuda-ie.h	/^		CuVector<double> w_vec_;$/;"	m	class:kaldi::CudaIE	access:private
+weights_	backup/my-cuda-fgmm.h	/^		CuVector<BaseFloat> weights_;$/;"	m	class:kaldi::CudaFGMM	access:private
+weights_	backup/my-cuda-gmm.h	/^		CuVector<BaseFloat> weights_;$/;"	m	class:kaldi::CudaGMM	access:private
+weights_	my-cuda-fgmm.h	/^		CuVector<BaseFloat> weights_;$/;"	m	class:kaldi::CudaFGMM	access:private
+weights_	my-cuda-gmm.h	/^		CuVector<BaseFloat> weights_;$/;"	m	class:kaldi::CudaGMM	access:private
+window	OptionStruct.h	/^	Vector<BaseFloat> window;$/;"	m	struct:CudaFeatureWindowFunction	access:public
+window	OptionStruct.h	/^	int32 window,$/;"	m	struct:CudaShiftedDeltaFeaturesOptions	access:public
+window	OptionStruct.h	/^	int32 window;$/;"	m	struct:CudaDeltaFeatureOptions	access:public
+window	backup/OptionStruct.h	/^	Vector<BaseFloat> window;$/;"	m	struct:CudaFeatureWindowFunction	access:public
+window	backup/OptionStruct.h	/^	int32 window,$/;"	m	struct:CudaShiftedDeltaFeaturesOptions	access:public
+window	backup/OptionStruct.h	/^	int32 window;$/;"	m	struct:CudaDeltaFeatureOptions	access:public
+window_type	OptionStruct.h	/^	std::string window_type;$/;"	m	struct:CudaFrameExtractionOptions	access:public
+window_type	backup/OptionStruct.h	/^	std::string window_type;$/;"	m	struct:CudaFrameExtractionOptions	access:public
+~CuDevice	backup/cu-device.cc	/^CuDevice::~CuDevice() {$/;"	f	class:kaldi::CuDevice	signature:()
+~CuMatrixInt	backup/my-cuda-data-struct.h	/^		~CuMatrixInt(){}$/;"	f	class:CuMatrixInt	access:public	signature:()
+~CudaFFT	backup/my-cuda-function.h	/^		~CudaFFT() {}$/;"	f	class:CudaFFT	access:public	signature:()
+~CudaFFT	my-cuda-function.h	/^		~CudaFFT() {}$/;"	f	class:CudaFFT	access:public	signature:()
+~CudaFGMM	backup/my-cuda-fgmm.h	/^		~CudaFGMM() {}$/;"	f	class:kaldi::CudaFGMM	access:public	signature:()
+~CudaFGMM	my-cuda-fgmm.h	/^		~CudaFGMM() {}$/;"	f	class:kaldi::CudaFGMM	access:public	signature:()
+~CudaGMM	backup/my-cuda-gmm.h	/^		~CudaGMM() {}$/;"	f	class:kaldi::CudaGMM	access:public	signature:()
+~CudaGMM	my-cuda-gmm.h	/^		~CudaGMM() {}$/;"	f	class:kaldi::CudaGMM	access:public	signature:()
+~CudaIE	backup/my-cuda-ie.h	/^		~CudaIE() {}$/;"	f	class:kaldi::CudaIE	access:public	signature:()
+~CudaIE	my-cuda-ie.h	/^		~CudaIE() {}$/;"	f	class:kaldi::CudaIE	access:public	signature:()
+~CudaIEStats	backup/my-cuda-ie.h	/^		~CudaIEStats() {}$/;"	f	class:kaldi::CudaIEStats	access:public	signature:()
+~CudaIEStats	my-cuda-ie.h	/^		~CudaIEStats() {}$/;"	f	class:kaldi::CudaIEStats	access:public	signature:()
+~CudaInitUBM	backup/my-cuda-init.h	/^		~CudaInitUBM() {}$/;"	f	class:kaldi::CudaInitUBM	access:public	signature:()
+~CudaInitUBM	my-cuda-init.h	/^		~CudaInitUBM() {}$/;"	f	class:kaldi::CudaInitUBM	access:public	signature:()
+~CudaSRE	backup/my-cuda-sre.h	/^		~CudaSRE() {}$/;"	f	class:kaldi::CudaSRE	access:public	signature:()
+~CudaSRE	my-cuda-sre.h	/^		~CudaSRE()$/;"	f	class:kaldi::CudaSRE	access:public	signature:()
+~MatrixInt	my-cuda-data-struct.h	/^		~MatrixInt(){}$/;"	f	class:MatrixInt	access:private	signature:()
+~SRECompute	backup/my-cuda-compute.h	/^		~SRECompute() {}$/;"	f	class:kaldi::SRECompute	access:public	signature:()
+~SRECompute	my-cuda-compute.h	/^		~SRECompute() {}$/;"	f	class:kaldi::SRECompute	access:public	signature:()

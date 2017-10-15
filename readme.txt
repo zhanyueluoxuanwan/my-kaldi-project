@@ -1,1 +1,3 @@
-Just a test repo for some cuda code.
+Kaldi GPU project with @day9011
+
+Dependency follows KALDI project
